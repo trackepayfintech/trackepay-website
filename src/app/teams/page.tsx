@@ -1,0 +1,150 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import CTABanner from "@/components/shared/CTABanner";
+
+export const metadata: Metadata = {
+  title: "Our Team - Trackepay Fintech (OPC) Pvt Ltd",
+  description:
+    "Meet the Trackepay team. Access a trusted collection of insights, tools, and expertise from passionate professionals dedicated to your success.",
+};
+
+const teamMembers = [
+  {
+    name: "Diptendu Shekhar Nayak",
+    role: "Director",
+    initials: "DN",
+    photo: "/images/wp/Untitled-design-9.png",
+    quote:
+      "At Trackepay, we recognize the distinct challenges faced by small and medium fintech businesses. Our goal is to provide innovative, accessible solutions that empower these organizations to compete and thrive in today's digital economy.",
+  },
+  {
+    name: "Biswajit Pradhan",
+    role: "Co-Founder, CTO",
+    initials: "BP",
+    photo: "/images/wp/IMG_3541.jpeg",
+    quote:
+      "Our software streamlines all aspects of your business operations, from accounting and payroll to invoicing and payments. We build tools that simplify complexity and let you focus on growth.",
+  },
+  {
+    name: "Subhashree Sethi",
+    role: "Senior Developer",
+    initials: "SS",
+    photo: "/images/wp/Untitled-design-13.png",
+    quote:
+      "We know that no two businesses are the same, and that's why we offer customized software solutions tailored to your specific needs. Every line of code we write is purposeful.",
+  },
+  {
+    name: "Biswajit Sahoo",
+    role: "Business Analytics",
+    initials: "BS",
+    photo: "/images/wp/Untitled-design-11.png",
+    quote:
+      "We believe that every business, regardless of size, should have access to affordable and scalable software solutions. Data-driven decisions are the backbone of sustainable growth.",
+  },
+];
+
+const clientLogos = [
+  { src: "/images/clients/digital-domination.webp", alt: "Digital Domination" },
+  { src: "/images/clients/nuancenext.webp", alt: "NuanceNext" },
+  { src: "/images/clients/client3.png", alt: "Client" },
+  { src: "/images/clients/pulse-prime.png", alt: "Pulse Prime" },
+  { src: "/images/clients/bikaash-baahan.png", alt: "Bikaash Baahan" },
+  { src: "/images/clients/logowa.png", alt: "Logowa" },
+  { src: "/images/clients/valeroso.png", alt: "Valeroso" },
+];
+
+export default function TeamsPage() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-orange-50 to-slate-50 py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <span className="inline-block bg-orange-50 text-orange-700 px-3 py-1 rounded-full text-sm font-medium mb-6">
+            Meet the Team
+          </span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight max-w-4xl mx-auto tracking-tight">
+            Our Team
+          </h1>
+          <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            With you throughout the entire process&mdash;from deployment to
+            continuous support and learning. Access a trusted collection of
+            insights, tools, and expertise from passionate members of our
+            growing community.
+          </p>
+        </div>
+      </section>
+
+      {/* Team Grid - 2x2 */}
+      <section id="team" className="py-20 lg:py-28 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {teamMembers.map((member) => (
+              <div
+                key={member.name}
+                className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="flex items-start gap-5 mb-6">
+                  {/* Avatar with photo or gradient fallback */}
+                  {member.photo ? (
+                    <div className="relative h-16 w-16 rounded-2xl overflow-hidden flex-shrink-0">
+                      <Image
+                        src={member.photo}
+                        alt={member.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#110F33] to-[#1a1850] text-white text-xl font-bold flex-shrink-0">
+                      {member.initials}
+                    </div>
+                  )}
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-900">
+                      {member.name}
+                    </h3>
+                    <p className="text-xs font-semibold uppercase tracking-wider text-orange-500 mt-1">
+                      {member.role}
+                    </p>
+                  </div>
+                </div>
+                <p className="text-slate-500 leading-relaxed">
+                  &ldquo;{member.quote}&rdquo;
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Client Logos - Marquee */}
+      <section className="py-16 lg:py-20 bg-slate-50 border-t border-slate-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-center text-sm font-medium text-slate-500 uppercase tracking-wider mb-10">
+            Trusted by industry leaders
+          </p>
+          <div className="overflow-hidden">
+            <div className="flex animate-marquee w-max">
+              {[...clientLogos, ...clientLogos].map((logo, i) => (
+                <div
+                  key={`${logo.alt}-${i}`}
+                  className="relative h-10 w-32 mx-8 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex-shrink-0"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <CTABanner />
+    </>
+  );
+}
