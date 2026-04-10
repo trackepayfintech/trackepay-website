@@ -93,7 +93,7 @@ export default function Footer() {
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#F48120]/10 blur-[120px] rounded-full"
+          className="absolute top-0 left-1/2 -translate-x-1/2 w-150 h-75 bg-[#F48120]/10 blur-[120px] rounded-full"
         />
       </div>
 

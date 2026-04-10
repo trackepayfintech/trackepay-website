@@ -161,7 +161,7 @@ export default function Home() {
               {[...clientLogos, ...clientLogos].map((logo, i) => (
                 <div
                   key={`${logo.alt}-${i}`}
-                  className="relative h-10 w-32 mx-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 flex-shrink-0"
+                  className="relative h-10 w-32 mx-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shrink-0"
                 >
                   <Image
                     src={logo.src}
@@ -232,7 +232,7 @@ export default function Home() {
                       key={item}
                       className="flex items-center gap-2.5 text-sm text-slate-700"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500 flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-emerald-500 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -281,14 +281,14 @@ export default function Home() {
                       key={item}
                       className="flex items-center gap-2.5 text-sm text-slate-700"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-[#F48120] flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-[#F48120] shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href="/services"
-                  className="inline-flex items-center text-sm font-semibold text-[#F48120] hover:text-[#d97218] transition-colors group"
+                  className="inline-flex items-center text-sm font-semibold text-[#F48120] hover:text-orange-dark transition-colors group"
                 >
                   View Products
                   <ArrowRight className="ml-1.5 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
@@ -330,7 +330,7 @@ export default function Home() {
                       key={item}
                       className="flex items-center gap-2.5 text-sm text-slate-700"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-blue-500 flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-blue-500 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -521,14 +521,14 @@ export default function Home() {
                       key={s}
                       className="flex items-center gap-2.5 text-sm text-slate-700"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-[#F48120] flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-[#F48120] shrink-0" />
                       {s}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href={cat.href}
-                  className="inline-flex items-center text-sm font-semibold text-[#F48120] hover:text-[#d97218] transition-colors group"
+                  className="inline-flex items-center text-sm font-semibold text-[#F48120] hover:text-orange-dark transition-colors group"
                 >
                   Learn More
                   <ArrowRight className="ml-1.5 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
@@ -540,7 +540,7 @@ export default function Home() {
       </section>
 
       {/* ═══════════ 8. BLOG PREVIEW ═══════════ */}
-      <section className="py-24 lg:py-32 bg-white border-t border-slate-100">
+      {/* <section className="py-24 lg:py-32 bg-white border-t border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block bg-orange-50 text-[#F48120] px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
@@ -580,7 +580,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ═══════════ 9. CTA BANNER ═══════════ */}
       <CTABanner />

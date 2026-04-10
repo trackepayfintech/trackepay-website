@@ -153,7 +153,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#F8FAFC] py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-bg-muted py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
@@ -169,7 +169,7 @@ export default function ServicesPage() {
                 and scalability.
               </p>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/images/wp/corporate-services-hero.webp"
                 alt="Trackepay digital services"
@@ -214,7 +214,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services by Category */}
-      <section className="py-20 lg:py-28 bg-[#F8FAFC]">
+      <section className="py-20 lg:py-28 bg-bg-muted">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">

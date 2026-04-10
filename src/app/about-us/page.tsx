@@ -189,9 +189,9 @@ export default function AboutUsPage() {
             </div>
             <div className="relative">
               {/* Decorative element */}
-              <div className="absolute -top-6 -right-6 w-48 h-48 bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl -z-10" />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full -z-10" />
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+              <div className="absolute -top-6 -right-6 w-48 h-48 bg-linear-to-br from-orange-100 to-orange-200 rounded-2xl -z-10" />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-linear-to-br from-orange-100 to-orange-200 rounded-full -z-10" />
+              <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/images/wp/Gemini_Generated_Image_5ylehb5ylehb5yle.png"
                   alt="Trackepay team in a meeting room"
@@ -261,7 +261,7 @@ export default function AboutUsPage() {
                 className="group bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden"
               >
                 {/* Gradient Header */}
-                <div className="h-28 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 relative">
+                <div className="h-28 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 relative">
 
                   {/* Avatar */}
                   <div className="absolute left-1/2 -bottom-12 -translate-x-1/2">
@@ -276,7 +276,7 @@ export default function AboutUsPage() {
                         />
                       </div>
                     ) : (
-                      <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-white bg-gradient-to-br from-[#110F33] to-[#1a1850] text-white text-lg font-bold shadow-md">
+                      <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-white bg-linear-to-br from-navy to-navy-light text-white text-lg font-bold shadow-md">
                         {member.initials}
                       </div>
                     )}
@@ -305,7 +305,7 @@ export default function AboutUsPage() {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-6 w-full flex items-center justify-center gap-2 text-sm bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2.5 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 hover:scale-[1.02] active:scale-[0.98]"
+                      className="mt-6 w-full flex items-center justify-center gap-2 text-sm bg-linear-to-r from-blue-600 to-purple-600 text-white py-2.5 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 hover:scale-[1.02] active:scale-[0.98]"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -384,7 +384,7 @@ export default function AboutUsPage() {
                   {m.image ? (
                     <div className="hidden sm:block sm:w-1/2">
                       <div
-                        className={`relative aspect-[16/10] rounded-2xl overflow-hidden shadow-sm ${i % 2 === 0 ? "sm:ml-12" : "sm:mr-12"
+                        className={`relative aspect-16/10 rounded-2xl overflow-hidden shadow-sm ${i % 2 === 0 ? "sm:ml-12" : "sm:mr-12"
                           }`}
                       >
                         <Image
