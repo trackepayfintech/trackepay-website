@@ -1,0 +1,23 @@
+name: Sync to trackepayfintech/trackepay-website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to destination repo
+        env:
+          DEST_PAT: ${{ secrets.DEST_REPO_PAT }}
+        run: |
+          git remote add destination https://x-access-token:${DEST_PAT}@github.com/trackepayfintech/trackepay-website.git
+          git push destination main --force
