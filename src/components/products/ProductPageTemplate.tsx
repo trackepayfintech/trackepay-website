@@ -70,7 +70,7 @@ export default function ProductPageTemplate({
             {heroImageSrc && (
               <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
                 <Image
-                  src={heroImageSrc}
+                  src={heroImageSrc || "/images/wp/Gemini_Generated_Image_y5vyv6y5vyv6y5vy.png"}
                   alt={heroTitle}
                   fill
                   className="object-cover"
@@ -88,7 +88,7 @@ export default function ProductPageTemplate({
           {heroImageSrc ? (
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src={heroImageSrc}
+                src={heroImageSrc || "/images/wp/Gemini_Generated_Image_x4ks4gx4ks4gx4ks.png"}
                 alt={heroTitle}
                 fill
                 className="object-cover"

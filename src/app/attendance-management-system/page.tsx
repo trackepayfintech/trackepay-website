@@ -13,20 +13,6 @@ export const metadata: Metadata = {
   title: "Attendance Management System | Trackepay",
   description:
     "Our Attendance Management System automates check-ins, shift tracking, and leave records to ensure accurate workforce management and compliance.",
-  keywords: ["attendance management system", "employee attendance tracking", "biometric attendance", "shift management", "leave management software", "workforce management"],
-  openGraph: {
-    title: "Attendance Management System | Trackepay",
-    description: "Our Attendance Management System automates check-ins, shift tracking, and leave records to ensure accurate workforce management and compliance.",
-    url: "https://www.trackepay.in/attendance-management-system/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Attendance Management System | Trackepay",
-    description: "Our Attendance Management System automates check-ins, shift tracking, and leave records to ensure accurate workforce management and compliance.",
-  },
 };
 
 export default function AttendanceManagementSystemPage() {
@@ -38,6 +24,7 @@ export default function AttendanceManagementSystemPage() {
       breadcrumbLabel="Attendance Management System"
       contentTitle="Attendance Management System"
       contentDescription="Take control of your workforce attendance with a robust system that integrates seamlessly with biometric devices, mobile apps, and web portals. Get real-time visibility into employee attendance, leaves, and shifts."
+      heroImageSrc="/images/wp/Gemini_Generated_Image_y5vyv6y5vyv6y5vy.png"
       featureChecklist={[
         "Real-Time Check-In/Out",
         "Leave Management",

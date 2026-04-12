@@ -1,27 +1,13 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, FileText } from "lucide-react";
 import Link from "next/link";
 import CTABanner from "@/components/shared/CTABanner";
-import DeftFormEmbed from "@/components/shared/DeftFormEmbed";
+import PhoneField from "@/components/PhoneField";
 
 export const metadata: Metadata = {
   title: "Contact Us | Trackepay",
   description:
     "Get in touch with Trackepay. If you have any inquiries or require further information, our team will respond at the earliest opportunity.",
-  keywords: ["contact trackepay", "get in touch", "IT company contact", "Bhubaneswar office", "software company contact"],
-  openGraph: {
-    title: "Contact Us | Trackepay",
-    description: "Get in touch with Trackepay. If you have any inquiries or require further information, our team will respond at the earliest opportunity.",
-    url: "https://www.trackepay.in/contact/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact Us | Trackepay",
-    description: "Get in touch with Trackepay. If you have any inquiries or require further information, our team will respond at the earliest opportunity.",
-  },
 };
 
 export default function ContactPage() {
@@ -44,9 +30,94 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* Contact Form */}
+          {/* Form Placeholder */}
           <div className="max-w-3xl mx-auto mt-12">
-            <DeftFormEmbed formId="92584a8e-f59b-4bf5-8099-b739719b0762" />
+            <div className="bg-white p-8 rounded-2xl shadow-md border border-slate-200">
+
+              <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
+
+              <form className="space-y-6">
+
+                {/* Name */}
+                <div>
+                  <label className="block mb-2 font-medium">
+                    Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  />
+                </div>
+
+                {/* Phone */}
+                <div>
+                  <label className="block mb-2 font-medium">
+                    Phone Number <span className="text-red-500">*</span>
+                  </label>
+
+                  <PhoneField />
+                </div>
+
+                {/* Email */}
+                <div>
+                  <label className="block mb-2 font-medium">
+                    Email <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  />
+                </div>
+
+                {/* Company */}
+                <div>
+                  <label className="block mb-2 font-medium">
+                    Company Name
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter company name"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  />
+                </div>
+
+                {/* Inquiry */}
+                <div>
+                  <label className="block mb-2 font-medium">
+                    Inquiry Type <span className="text-red-500">*</span>
+                  </label>
+                  <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400">
+                    <option></option>
+                    <option>Service Request</option>
+                    <option>Product Request</option>
+                    <option>Support Request</option>
+                  </select>
+                </div>
+
+                {/* Message */}
+                <div>
+                  <label className="block mb-2 font-medium">
+                    Message <span className="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    rows={4}
+                    placeholder="Write your message..."
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  ></textarea>
+                </div>
+
+                {/* Button */}
+                <button
+                  type="submit"
+                  className="w-full bg-black text-white py-4 rounded-xl font-semibold hover:bg-gray-900 transition"
+                >
+                  Submit
+                </button>
+
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -102,7 +173,7 @@ export default function ContactPage() {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-4 mt-16">
             <Link
-              href="https://www.facebook.com/trackepayfintech"
+              href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 border border-white/10"
@@ -117,7 +188,7 @@ export default function ContactPage() {
               </svg>
             </Link>
             <Link
-              href="https://www.linkedin.com/company/trackepayfintech"
+              href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 border border-white/10"
@@ -132,7 +203,7 @@ export default function ContactPage() {
               </svg>
             </Link>
             <Link
-              href="https://www.instagram.com/trackepayfintech"
+              href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 border border-white/10"

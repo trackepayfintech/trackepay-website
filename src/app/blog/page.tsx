@@ -8,20 +8,6 @@ export const metadata: Metadata = {
   title: "Blog | Trackepay",
   description:
     "Read the latest insights, tips, and strategies on digital marketing, software development, and business growth from Trackepay.",
-  keywords: ["trackepay blog", "digital marketing insights", "software development tips", "business growth strategies", "technology blog"],
-  openGraph: {
-    title: "Blog | Trackepay",
-    description: "Read the latest insights, tips, and strategies on digital marketing, software development, and business growth from Trackepay.",
-    url: "https://www.trackepay.in/blog/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Blog | Trackepay",
-    description: "Read the latest insights, tips, and strategies on digital marketing, software development, and business growth from Trackepay.",
-  },
 };
 
 export default function BlogPage() {

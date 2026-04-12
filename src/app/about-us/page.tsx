@@ -16,20 +16,6 @@ export const metadata: Metadata = {
   title: "About Us - Trackepay Fintech (OPC) Pvt Ltd",
   description:
     "Learn about Trackepay's mission to shape a better future through smart, modern engineering. Founded in 2021, we deliver innovative digital solutions.",
-  keywords: ["about trackepay", "trackepay fintech", "IT company Bhubaneswar", "software company India", "digital solutions", "founded 2021"],
-  openGraph: {
-    title: "About Us - Trackepay Fintech (OPC) Pvt Ltd",
-    description: "Learn about Trackepay's mission to shape a better future through smart, modern engineering. Founded in 2021, we deliver innovative digital solutions.",
-    url: "https://www.trackepay.in/about-us/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About Us - Trackepay Fintech (OPC) Pvt Ltd",
-    description: "Learn about Trackepay's mission to shape a better future through smart, modern engineering. Founded in 2021, we deliver innovative digital solutions.",
-  },
 };
 
 const values = [
@@ -72,16 +58,39 @@ const values = [
 ];
 
 const teamMembers = [
-  { name: "Biswajit Pradhan", role: "CTO", initials: "BP", photo: "/images/wp/IMG_3541.jpeg" },
-  { name: "Biswajit Sahoo", role: "Business Analytics", initials: "BS", photo: "/images/wp/Untitled-design-11.png" },
-  { name: "Ashish Ku Puntia", role: "Software Developer", initials: "AP", photo: "/images/wp/Untitled-design-36.png" },
   {
-    name: "MD Noor Alam Quadri",
-    role: "Software Developer",
-    initials: "MQ",
-    photo: "/images/wp/Untitled-design-37.png",
+    name: "Biswajit Pradhan",
+    role: "CTO",
+    desc: "Visionary leader with 10+ years in B2B marketing. Drives strategic growth initiatives and oversees client success across all verticals.",
+    initials: "BP",
+    photo: "/images/wp/IMG_3541.jpeg",
+    linkedin: "https://linkedin.com/in/biswajit-pradhan",
   },
-  { name: "Abhilipsa Das", role: "HR Generalist", initials: "AD", photo: "/images/wp/Untitled-design-19.png" },
+  {
+    name: "Biswajit Sahoo",
+    role: "Business Analytics",
+    desc: "Data-driven strategist specializing in market research, performance analytics, and ROI optimization for maximum campaign effectiveness.",
+    initials: "BS",
+    photo: "/images/wp/Untitled-design-11.png",
+    linkedin: "https://www.linkedin.com/in/biswajit-s-ahoo/",
+  },
+  {
+    name: "Ashish Ku Puntia",
+    role: "Software Developer",
+    desc: "Focused on building scalable and efficient applications with modern web technologies and clean architecture.",
+    initials: "AP",
+    photo: "/images/wp/WhatsApp Image 2026-04-04 at 4.20.36 PM.jpeg",
+    linkedin: "https://www.linkedin.com/in/ashish-kumar-puntia/",
+  },
+
+  {
+    name: "Abhilipsa Das",
+    role: "HR Generalist",
+    desc: "Focused on people-first strategies, enhancing workplace productivity, boosting employee engagement and supporting company vision.",
+    initials: "AD",
+    photo: "/images/wp/Untitled-design-37.png",
+    linkedin: "https://www.linkedin.com/in/abhilipsa-das-1a962a125/",
+  },
 ];
 
 const milestones = [
@@ -90,35 +99,35 @@ const milestones = [
     title: "Founded with Vision",
     description:
       "Trackepay was established with a mission to innovate and deliver smart digital solutions for modern businesses.",
-    image: "/images/wp/corporate-timeline-2.webp",
+    image: "/images/wp/image.png",
   },
   {
     year: "2022",
     title: "First Product Launch",
     description:
       "Launched our first product with strong industry adoption, gaining early traction and positive client feedback.",
-    image: "/images/wp/corporate-timeline-3.webp",
+    image: "/images/wp/Gemini_Generated_Image_1re8lk1re8lk1re8.png",
   },
   {
     year: "2023",
     title: "Market Expansion",
     description:
       "Expanded into new markets and formed strategic partnerships to accelerate growth and broaden service offerings.",
-    image: "/images/wp/corporate-timeline-4.webp",
+    image: "/images/wp/Gemini_Generated_Image_au1igfau1igfau1i.png",
   },
   {
     year: "2024",
     title: "Remote Work Integration",
     description:
       "Embraced a remote-first culture, enabling our team to collaborate seamlessly across geographies.",
-    image: "/images/wp/corporate-inovations-1.webp",
+    image: "/images/wp/Gemini_Generated_Image_co5lasco5lasco5l.png",
   },
   {
     year: "2025",
     title: "Sustainability & Community",
     description:
       "Shifted focus toward sustainability initiatives and meaningful community engagement through technology.",
-    image: "/images/wp/corporate-inovations-2.webp",
+    image: "/images/wp/Gemini_Generated_Image_y5o7jly5o7jly5o7.png",
   },
 ];
 
@@ -180,11 +189,11 @@ export default function AboutUsPage() {
             </div>
             <div className="relative">
               {/* Decorative element */}
-              <div className="absolute -top-6 -right-6 w-48 h-48 bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl -z-10" />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full -z-10" />
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+              <div className="absolute -top-6 -right-6 w-48 h-48 bg-linear-to-br from-orange-100 to-orange-200 rounded-2xl -z-10" />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-linear-to-br from-orange-100 to-orange-200 rounded-full -z-10" />
+              <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="/images/wp/pexels-rdne-7581110-scaled.jpg"
+                  src="/images/wp/Gemini_Generated_Image_5ylehb5ylehb5yle.png"
                   alt="Trackepay team in a meeting room"
                   fill
                   className="object-cover"
@@ -228,8 +237,10 @@ export default function AboutUsPage() {
       </section>
 
       {/* Team Preview */}
-      <section className="py-20 lg:py-28 bg-slate-50">
+      <section className="py-20 lg:py-28 bg-[#f5f6f8]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+          {/* Header */}
           <div className="text-center mb-16">
             <span className="inline-block bg-orange-50 text-orange-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
               Our People
@@ -241,32 +252,77 @@ export default function AboutUsPage() {
               The people behind Trackepay who make innovation happen every day.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+
+          {/* Cards */}
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {teamMembers.map((member) => (
               <div
                 key={member.name}
-                className="bg-white rounded-2xl p-6 text-center shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                className="group bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden"
               >
-                {member.photo ? (
-                  <div className="relative mx-auto mb-4 h-20 w-20 rounded-full overflow-hidden">
-                    <Image
-                      src={member.photo}
-                      alt={member.name}
-                      fill
-                      className="object-cover"
-                    />
+                {/* Gradient Header */}
+                <div className="h-28 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 relative">
+
+                  {/* Avatar */}
+                  <div className="absolute left-1/2 -bottom-12 -translate-x-1/2">
+                    {member.photo ? (
+                      <div className="w-24 h-24 rounded-full border-4 border-white bg-white shadow-md flex items-center justify-center overflow-hidden">
+                        <Image
+                          src={member.photo}
+                          alt={member.name}
+                          width={96}
+                          height={96}
+                          className="object-contain p-2"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-white bg-linear-to-br from-navy to-navy-light text-white text-lg font-bold shadow-md">
+                        {member.initials}
+                      </div>
+                    )}
                   </div>
-                ) : (
-                  <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-[#110F33] to-[#1a1850] text-white text-xl font-bold">
-                    {member.initials}
-                  </div>
-                )}
-                <h3 className="text-sm font-bold text-slate-900">
-                  {member.name}
-                </h3>
-                <p className="mt-1 text-xs text-slate-500 font-medium">
-                  {member.role}
-                </p>
+                </div>
+
+                {/* Content */}
+                <div className="pt-16 pb-6 px-6 text-center">
+                  <h3 className="text-base font-semibold text-slate-900">
+                    {member.name}
+                  </h3>
+
+                  <div className="w-10 h-1 bg-purple-500 mx-auto my-2 rounded-full"></div>
+
+                  <span className="inline-block text-xs px-4 py-1 rounded-full bg-purple-100 text-purple-600 font-medium mb-4">
+                    {member.role}
+                  </span>
+
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    {member.desc}
+                  </p>
+
+                  {/* ✅ LinkedIn Button */}
+                  {member.linkedin ? (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 w-full flex items-center justify-center gap-2 text-sm bg-linear-to-r from-blue-600 to-purple-600 text-white py-2.5 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 hover:scale-[1.02] active:scale-[0.98]"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M20.45 20.45h-3.554v-5.568c0-1.327-.024-3.035-1.85-3.035-1.853 0-2.137 1.445-2.137 2.939v5.664H9.355V9h3.414v1.561h.048c.476-.9 1.637-1.85 3.37-1.85 3.604 0 4.27 2.372 4.27 5.455v6.284zM5.337 7.433a2.06 2.06 0 110-4.121 2.06 2.06 0 010 4.121zM6.964 20.45H3.708V9h3.256v11.45zM22.225 0H1.771C.792 0 0 .774 0 1.728v20.543C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.728C24 .774 23.2 0 22.222 0h.003z" />
+                      </svg>
+                      Connect on LinkedIn
+                    </a>
+                  ) : (
+                    <div className="mt-6 w-full text-sm bg-gray-200 text-gray-400 py-2.5 rounded-lg">
+                      Not Available
+                    </div>
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -293,9 +349,8 @@ export default function AboutUsPage() {
               {milestones.map((m, i) => (
                 <div
                   key={m.year}
-                  className={`relative flex flex-col sm:flex-row items-start gap-6 ${
-                    i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-                  }`}
+                  className={`relative flex flex-col sm:flex-row items-start gap-6 ${i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
+                    }`}
                 >
                   {/* Dot */}
                   <div className="absolute left-6 sm:left-1/2 -translate-x-1/2 mt-1 z-10">
@@ -304,16 +359,14 @@ export default function AboutUsPage() {
 
                   {/* Content */}
                   <div
-                    className={`ml-14 sm:ml-0 sm:w-1/2 ${
-                      i % 2 === 0
-                        ? "sm:pr-12 sm:text-right"
-                        : "sm:pl-12 sm:text-left"
-                    }`}
+                    className={`ml-14 sm:ml-0 sm:w-1/2 ${i % 2 === 0
+                      ? "sm:pr-12 sm:text-right"
+                      : "sm:pl-12 sm:text-left"
+                      }`}
                   >
                     <div
-                      className={`bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-all duration-300 ${
-                        i % 2 === 0 ? "sm:ml-auto" : ""
-                      }`}
+                      className={`bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-all duration-300 ${i % 2 === 0 ? "sm:ml-auto" : ""
+                        }`}
                     >
                       <span className="text-sm font-bold text-orange">
                         {m.year}
@@ -331,9 +384,8 @@ export default function AboutUsPage() {
                   {m.image ? (
                     <div className="hidden sm:block sm:w-1/2">
                       <div
-                        className={`relative aspect-[16/10] rounded-2xl overflow-hidden shadow-sm ${
-                          i % 2 === 0 ? "sm:ml-12" : "sm:mr-12"
-                        }`}
+                        className={`relative aspect-16/10 rounded-2xl overflow-hidden shadow-sm ${i % 2 === 0 ? "sm:ml-12" : "sm:mr-12"
+                          }`}
                       >
                         <Image
                           src={m.image}
@@ -358,3 +410,9 @@ export default function AboutUsPage() {
     </>
   );
 }
+
+
+
+
+
+

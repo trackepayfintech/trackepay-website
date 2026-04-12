@@ -19,34 +19,13 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.trackepay.in"),
-  title: {
-    default:
-      "Trackepay Fintech (OPC) Pvt Ltd | Smart Digital Solutions & IT Services",
-    template: "%s | Trackepay Fintech",
-  },
+  title: "Trackepay Fintech (OPC) Pvt Ltd | Smart Digital Solutions & IT Services",
   description:
     "Trackepay provides enterprise-grade digital solutions, software development, fintech services, and marketing strategies to help businesses streamline operations and accelerate growth.",
-  keywords: [
-    "Trackepay",
-    "fintech",
-    "software development",
-    "IT services",
-    "digital solutions",
-    "Bhubaneswar",
-    "enterprise software",
-    "smart policing",
-    "government solutions",
-    "SaaS",
-  ],
-  authors: [{ name: "Trackepay Fintech (OPC) Pvt Ltd" }],
-  creator: "Trackepay Fintech",
-  publisher: "Trackepay Fintech (OPC) Pvt Ltd",
   openGraph: {
     title: "Trackepay Fintech | Smart Digital Solutions & IT Services",
     description:
       "Enterprise-grade digital solutions, software development, and fintech services that help businesses streamline operations and accelerate growth.",
-    url: "https://www.trackepay.in",
     type: "website",
     locale: "en_IN",
     siteName: "Trackepay Fintech",
@@ -60,16 +39,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  alternates: {
-    canonical: "https://www.trackepay.in",
   },
 };
 

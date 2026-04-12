@@ -93,13 +93,14 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0" onClick={closeMobile}>
+          <Link href="/" className="shrink-0" onClick={closeMobile}>
             <Image
               src="/images/logos/logo-dark.png"
               alt="Trackepay"
               width={132}
               height={32}
               priority
+              className="h-10 w-auto"
             />
           </Link>
 
@@ -115,7 +116,7 @@ export default function Navbar() {
             >
               Home
               {isActive("/") && (
-                <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-[2px] w-[2px] rounded-full bg-[#F48120]" />
+                <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-0.5 w-0.5 rounded-full bg-[#F48120]" />
               )}
             </Link>
 
@@ -131,11 +132,11 @@ export default function Navbar() {
                 About Us
                 <ChevronDown className="h-3 w-3 opacity-50 transition-transform duration-300 group-hover:rotate-180" />
                 {aboutLinks.some((l) => isActive(l.href)) && (
-                  <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-[2px] w-[2px] rounded-full bg-[#F48120]" />
+                  <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-0.5 w-0.5 rounded-full bg-[#F48120]" />
                 )}
               </button>
               <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 absolute top-full left-1/2 -translate-x-1/2 pt-4">
-                <div className="w-52 rounded-2xl bg-white shadow-2xl ring-1 ring-black/[0.03] py-2">
+                <div className="w-52 rounded-2xl bg-white shadow-2xl ring-1 ring-black/3 py-2">
                   {aboutLinks.map((link) => (
                     <Link
                       key={link.href}
@@ -165,11 +166,11 @@ export default function Navbar() {
                 Solutions
                 <ChevronDown className="h-3 w-3 opacity-50 transition-transform duration-300 group-hover:rotate-180" />
                 {allSolutionHrefs.some((href) => isActive(href)) && (
-                  <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-[2px] w-[2px] rounded-full bg-[#F48120]" />
+                  <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-0.5 w-0.5 rounded-full bg-[#F48120]" />
                 )}
               </button>
               <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300 absolute top-full left-1/2 -translate-x-1/2 pt-4">
-                <div className="w-[800px] rounded-2xl bg-white shadow-2xl ring-1 ring-black/[0.03] p-8 grid grid-cols-4 gap-8">
+                <div className="w-200 rounded-2xl bg-white shadow-2xl ring-1 ring-black/3 p-8 grid grid-cols-4 gap-8">
                   {solutionsData.map((column) => (
                     <div key={column.title}>
                       <h4 className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-400 mb-4">
@@ -218,7 +219,7 @@ export default function Navbar() {
               >
                 {link.label}
                 {isActive(link.href) && (
-                  <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-[2px] w-[2px] rounded-full bg-[#F48120]" />
+                  <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-0.5 w-0.5 rounded-full bg-[#F48120]" />
                 )}
               </Link>
             ))}
@@ -337,7 +338,7 @@ export default function Navbar() {
               </button>
               <div
                 className={`overflow-hidden transition-all duration-300 w-full ${
-                  solutionsOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
+                  solutionsOpen ? "max-h-200 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="space-y-6 py-4 px-4">

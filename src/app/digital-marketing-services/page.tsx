@@ -14,20 +14,6 @@ export const metadata: Metadata = {
   title: "Digital Marketing Services - Trackepay Fintech",
   description:
     "Comprehensive digital marketing services including SEO, PPC, social media marketing, email marketing, and content marketing.",
-  keywords: ["digital marketing services", "SEO services", "PPC advertising", "social media marketing", "email marketing", "content marketing", "Bhubaneswar"],
-  openGraph: {
-    title: "Digital Marketing Services - Trackepay Fintech",
-    description: "Comprehensive digital marketing services including SEO, PPC, social media marketing, email marketing, and content marketing.",
-    url: "https://www.trackepay.in/digital-marketing-services/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Digital Marketing Services - Trackepay Fintech",
-    description: "Comprehensive digital marketing services including SEO, PPC, social media marketing, email marketing, and content marketing.",
-  },
 };
 
 export default function DigitalMarketingPage() {
@@ -35,7 +21,7 @@ export default function DigitalMarketingPage() {
     <ServicePageTemplate
       heroTitle="Digital Marketing Services"
       heroSubtitle="Grow your online presence, reach your target audience, and drive measurable results with our comprehensive digital marketing strategies tailored to your business goals."
-      heroImageSrc="/images/wp/Digital-Marketing-Services-650x367.png"
+      heroImageSrc="/images/wp/Gemini_Generated_Image_d1idwwd1idwwd1id.png"
       breadcrumbLabel="Digital Marketing"
       introparagraphs={[
         "In the digital age, effective marketing is the key to reaching your customers where they are. Our digital marketing team combines creativity with data-driven strategies to deliver campaigns that convert.",

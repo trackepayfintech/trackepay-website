@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Hero from "@/components/home/Hero";
+
 import {
   ArrowRight,
   CheckCircle2,
@@ -23,20 +25,10 @@ export const metadata: Metadata = {
     "Trackepay - Mission-Critical Software for Governments & Enterprises",
   description:
     "From smart policing systems for Indian law enforcement to enterprise SaaS — Trackepay delivers mission-critical technology trusted by 50+ police stations and 150+ enterprises.",
-  keywords: ["trackepay", "mission-critical software", "government software", "enterprise SaaS", "smart policing", "IT services India", "fintech solutions", "Bhubaneswar"],
   openGraph: {
     title: "Trackepay — Software Governments & Enterprises Rely On",
     description:
       "Mission-critical technology with 99.9% uptime. Smart policing, enterprise SaaS, and global IT services.",
-    url: "https://www.trackepay.in/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Trackepay - Mission-Critical Software for Governments & Enterprises",
-    description: "From smart policing systems for Indian law enforcement to enterprise SaaS — Trackepay delivers mission-critical technology trusted by 50+ police stations and 150+ enterprises.",
   },
 };
 
@@ -45,7 +37,7 @@ export const metadata: Metadata = {
 const clientLogos = [
   { src: "/images/clients/digital-domination.webp", alt: "Digital Domination" },
   { src: "/images/clients/nuancenext.webp", alt: "NuanceNext" },
-  { src: "/images/clients/client3.png", alt: "Client Partner" },
+  { src: "/images/clients/client3.png", alt: "Client" },
   { src: "/images/clients/pulse-prime.png", alt: "Pulse Prime" },
   { src: "/images/clients/bikaash-baahan.png", alt: "Bikaash Baahan" },
   { src: "/images/clients/logowa.png", alt: "Logowa" },
@@ -153,68 +145,10 @@ const serviceCategories = [
 export default function Home() {
   return (
     <>
+        <Hero />
       {/* ═══════════ 1. HERO — Dark ═══════════ */}
-      <section className="relative min-h-screen flex items-center justify-center bg-[#0a0a0a] overflow-hidden">
-        {/* Dot grid background */}
-        <div className="absolute inset-0 bg-dot-pattern opacity-[0.04]" />
-
-        {/* Radial orange glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%] w-[700px] h-[500px] bg-[#F48120]/10 rounded-full blur-[120px] pointer-events-none" />
-
-        <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center py-32">
-          {/* Trust badge */}
-          <div className="animate-fade-up inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 mb-8">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
-            </span>
-            <span className="text-sm text-white/60">
-              Trusted by 50+ police stations &amp; 150+ enterprises
-            </span>
-          </div>
-
-          {/* Headline */}
-          <h1
-            className="animate-fade-up-delay-1 text-5xl sm:text-6xl lg:text-8xl font-extrabold text-white tracking-tight leading-[1.05]"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Softwares that Governments
-            <br className="hidden sm:block" /> &amp; Enterprises{" "}
-            <span className="text-gradient">rely on!</span>
-          </h1>
-
-          {/* Subtitle */}
-          <p className="animate-fade-up-delay-2 mt-8 text-lg sm:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed">
-            From smart policing systems for Indian law enforcement to enterprise
-            SaaS&nbsp;&mdash; Trackepay delivers mission-critical technology
-            with 99.9% uptime.
-          </p>
-
-          {/* CTAs */}
-          <div className="animate-fade-up-delay-3 mt-10 flex flex-col sm:flex-row items-center justify-center gap-5">
-            <Link
-              href="/contact"
-              className="inline-flex items-center bg-[#F48120] hover:bg-[#d97218] text-white font-semibold rounded-full px-8 py-4 text-base transition-all duration-200 shadow-lg shadow-orange-500/20 hover:shadow-xl hover:shadow-orange-500/30"
-            >
-              Book a Demo
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-            <Link
-              href="/portfolio"
-              className="text-white/50 hover:text-white text-base font-medium transition-colors inline-flex items-center gap-1"
-            >
-              View Our Work
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          {/* Trust line */}
-          <p className="animate-fade-up-delay-4 mt-8 text-sm text-white/25 tracking-wide">
-            &#10003; Free consultation &nbsp;&middot;&nbsp; &#10003; No
-            commitment &nbsp;&middot;&nbsp; &#10003; 24/7 support
-          </p>
-        </div>
-      </section>
+     
+     
 
       {/* ═══════════ 2. LOGO TICKER ═══════════ */}
       <section className="py-12 bg-white border-b border-slate-100">
@@ -227,7 +161,7 @@ export default function Home() {
               {[...clientLogos, ...clientLogos].map((logo, i) => (
                 <div
                   key={`${logo.alt}-${i}`}
-                  className="relative h-10 w-32 mx-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 flex-shrink-0"
+                  className="relative h-10 w-32 mx-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shrink-0"
                 >
                   <Image
                     src={logo.src}
@@ -298,7 +232,7 @@ export default function Home() {
                       key={item}
                       className="flex items-center gap-2.5 text-sm text-slate-700"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500 flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-emerald-500 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -347,14 +281,14 @@ export default function Home() {
                       key={item}
                       className="flex items-center gap-2.5 text-sm text-slate-700"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-[#F48120] flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-[#F48120] shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href="/services"
-                  className="inline-flex items-center text-sm font-semibold text-[#F48120] hover:text-[#d97218] transition-colors group"
+                  className="inline-flex items-center text-sm font-semibold text-[#F48120] hover:text-orange-dark transition-colors group"
                 >
                   View Products
                   <ArrowRight className="ml-1.5 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
@@ -396,7 +330,7 @@ export default function Home() {
                       key={item}
                       className="flex items-center gap-2.5 text-sm text-slate-700"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-blue-500 flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-blue-500 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -587,14 +521,14 @@ export default function Home() {
                       key={s}
                       className="flex items-center gap-2.5 text-sm text-slate-700"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-[#F48120] flex-shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-[#F48120] shrink-0" />
                       {s}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href={cat.href}
-                  className="inline-flex items-center text-sm font-semibold text-[#F48120] hover:text-[#d97218] transition-colors group"
+                  className="inline-flex items-center text-sm font-semibold text-[#F48120] hover:text-orange-dark transition-colors group"
                 >
                   Learn More
                   <ArrowRight className="ml-1.5 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
@@ -606,7 +540,7 @@ export default function Home() {
       </section>
 
       {/* ═══════════ 8. BLOG PREVIEW ═══════════ */}
-      <section className="py-24 lg:py-32 bg-white border-t border-slate-100">
+      {/* <section className="py-24 lg:py-32 bg-white border-t border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block bg-orange-50 text-[#F48120] px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
@@ -646,10 +580,11 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ═══════════ 9. CTA BANNER ═══════════ */}
       <CTABanner />
+       
     </>
   );
 }

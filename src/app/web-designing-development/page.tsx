@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+
 import {
   Globe,
   Code,
@@ -20,20 +21,6 @@ export const metadata: Metadata = {
   title: "Web Designing & Development - Trackepay Fintech",
   description:
     "Elevate your brand online with expert Web & App Development. We craft responsive, cutting-edge websites and mobile apps.",
-  keywords: ["web design services", "web development", "website development company", "responsive web design", "custom website development"],
-  openGraph: {
-    title: "Web Designing & Development - Trackepay Fintech",
-    description: "Elevate your brand online with expert Web & App Development. We craft responsive, cutting-edge websites and mobile apps.",
-    url: "https://www.trackepay.in/web-designing-development/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Web Designing & Development - Trackepay Fintech",
-    description: "Elevate your brand online with expert Web & App Development. We craft responsive, cutting-edge websites and mobile apps.",
-  },
 };
 
 const serviceCards = [
@@ -251,42 +238,59 @@ export default function WebDesigningDevelopmentPage() {
 
       {/* 4-Step Timeline */}
       <section className="py-20 lg:py-28 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+          {/* Heading */}
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800">
               Our 4-Step Process
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto">
-            {portfolioTimeline.map((step, i) => (
-              <div key={i} className="relative flex gap-6">
-                <div className="flex flex-col items-center">
-                  <div className="flex-shrink-0 w-11 h-11 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-sm z-10">
+
+          {/* Timeline */}
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-start justify-between gap-6 overflow-x-auto">
+
+              {portfolioTimeline.map((step, i) => (
+                <div
+                  key={i}
+                  className="flex-1 min-w-[220px] text-center relative transition hover:-translate-y-2"
+                >
+
+                  {/* Line */}
+                  {i !== portfolioTimeline.length - 1 && (
+                    <div className="absolute top-[22px] left-1/2 w-full h-[2px] bg-orange-200 z-0"></div>
+                  )}
+
+                  {/* Circle */}
+                  <div className="relative z-10 flex items-center justify-center w-11 h-11 mx-auto rounded-full bg-orange-500 text-white font-bold text-sm mb-4 shadow-md">
                     {i + 1}
                   </div>
-                  {i < portfolioTimeline.length - 1 && (
-                    <div className="w-px flex-1 border-l-2 border-dashed border-orange-200 my-1" />
-                  )}
-                </div>
-                <div className="pb-10 last:pb-0">
-                  <h3 className="text-xl font-semibold text-slate-800 mb-3">
+
+                  {/* Title */}
+                  <h3 className="text-lg font-semibold text-slate-800 mb-3">
                     {step.title}
                   </h3>
-                  <ul className="space-y-2">
+
+                  {/* Items */}
+                  <ul className="space-y-2 text-left">
                     {step.items.map((item, j) => (
                       <li
                         key={j}
-                        className="text-slate-600 text-sm leading-relaxed flex items-start gap-2"
+                        className="text-slate-600 text-sm flex items-start gap-2"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-1.5 flex-shrink-0" />
                         {item}
                       </li>
                     ))}
                   </ul>
+
                 </div>
-              </div>
-            ))}
+              ))}
+
+            </div>
           </div>
+
         </div>
       </section>
 

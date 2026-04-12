@@ -10,20 +10,6 @@ export const metadata: Metadata = {
   title: "Software & CRM Development Services - Trackepay Fintech",
   description:
     "Transform your business through technology with custom software and CRM development services.",
-  keywords: ["CRM development", "custom CRM software", "CRM solutions", "customer relationship management", "sales management software"],
-  openGraph: {
-    title: "Software & CRM Development Services - Trackepay Fintech",
-    description: "Transform your business through technology with custom software and CRM development services.",
-    url: "https://www.trackepay.in/software-crm-development-services/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Software & CRM Development Services - Trackepay Fintech",
-    description: "Transform your business through technology with custom software and CRM development services.",
-  },
 };
 
 export default function SoftwareCrmPage() {
@@ -31,6 +17,7 @@ export default function SoftwareCrmPage() {
     <ServicePageTemplate
       heroTitle="Software & CRM Development Services"
       heroSubtitle="Transform your business through technology. We design and develop custom software and CRM solutions that automate operations, enhance customer relationships, and accelerate growth."
+      heroImageSrc="/images/wp/Digital-Marketing-Services-Process-Image-1024x442.webp"
       breadcrumbLabel="Software & CRM"
       introparagraphs={[
         "At Trackepay, we believe that the right software can transform any business. Our team of experienced developers and strategists works closely with you to understand your unique challenges and build solutions that address them head-on.",

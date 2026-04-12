@@ -10,20 +10,6 @@ export const metadata: Metadata = {
   title: "Mobile Application Design & Development - Trackepay Fintech",
   description:
     "Welcome to TrackePay, where innovation and technology meet! We design and develop mobile applications that engage users and drive results.",
-  keywords: ["mobile app development", "iOS app development", "Android app development", "cross-platform apps", "mobile application design", "app development company"],
-  openGraph: {
-    title: "Mobile Application Design & Development - Trackepay Fintech",
-    description: "Welcome to TrackePay, where innovation and technology meet! We design and develop mobile applications that engage users and drive results.",
-    url: "https://www.trackepay.in/mobile-application-design-development/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mobile Application Design & Development - Trackepay Fintech",
-    description: "Welcome to TrackePay, where innovation and technology meet! We design and develop mobile applications that engage users and drive results.",
-  },
 };
 
 export default function MobileAppPage() {

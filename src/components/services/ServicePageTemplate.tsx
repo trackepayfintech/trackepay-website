@@ -91,29 +91,23 @@ export default function ServicePageTemplate({
       {introparagraphs && introparagraphs.length > 0 && (
         <section className="py-20 lg:py-28 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            {heroImageSrc ? (
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+
+            <div className="grid lg:grid-cols-5 gap-12 items-center">
+
+              {/* 🔥 Big Image (3 columns) */}
+              <div className="lg:col-span-3">
+                <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden shadow-xl">
                   <Image
-                    src={heroImageSrc}
-                    alt={heroTitle}
+                    src={heroImageSrc || "/images/default.jpg"}
+                    alt={heroTitle || "Image"}
                     fill
-                    className="object-cover"
+                    className=""
                   />
                 </div>
-                <div>
-                  {introparagraphs.map((p, i) => (
-                    <p
-                      key={i}
-                      className="text-slate-600 text-lg leading-relaxed mb-6 last:mb-0"
-                    >
-                      {p}
-                    </p>
-                  ))}
-                </div>
               </div>
-            ) : (
-              <div className="max-w-3xl mx-auto">
+
+              {/* Text (2 columns) */}
+              <div className="lg:col-span-2">
                 {introparagraphs.map((p, i) => (
                   <p
                     key={i}
@@ -123,7 +117,9 @@ export default function ServicePageTemplate({
                   </p>
                 ))}
               </div>
-            )}
+
+            </div>
+
           </div>
         </section>
       )}
@@ -147,7 +143,7 @@ export default function ServicePageTemplate({
                 )}
               </div>
               {section.items && (
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                   {section.items.map((item, i) => (
                     <div
                       key={i}
@@ -174,45 +170,60 @@ export default function ServicePageTemplate({
 
       {/* Process Steps */}
       {processSteps && processSteps.length > 0 && (
-        <section className="py-20 lg:py-28 bg-[#F8FAFC]">
+        <section className="py-20 lg:py-20 bg-[#F8FAFC]">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            {/* Heading */}
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-16 text-center">
               {processHeading}
             </h2>
-            <div className="max-w-3xl mx-auto space-y-0">
-              {processSteps.map((step, i) => (
-                <div key={i} className="relative flex gap-6">
-                  {/* Connector line */}
-                  <div className="flex flex-col items-center">
-                    <div className="flex-shrink-0 w-11 h-11 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-sm z-10">
+
+            {/* Horizontal Timeline */}
+            <div className="max-w-6xl mx-auto">
+              <div className="flex items-start justify-between gap-6 overflow-x-auto">
+
+                {processSteps.map((step, i) => (
+                  <div
+                    key={i}
+                    className="flex-1 min-w-[220px] text-center relative"
+                  >
+
+                    {/* Horizontal Line */}
+                    {i !== processSteps.length - 1 && (
+                      <div className="absolute top-[22px] left-1/2 w-full h-[2px] bg-orange-200"></div>
+                    )}
+
+                    {/* Circle */}
+                    <div className="relative z-10 w-11 h-11 mx-auto rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-sm mb-4">
                       {i + 1}
                     </div>
-                    {i < processSteps.length - 1 && (
-                      <div className="w-px flex-1 border-l-2 border-dashed border-orange-200 my-1" />
-                    )}
-                  </div>
-                  <div className="pb-10 last:pb-0">
-                    <h3 className="text-lg font-semibold text-slate-800 mb-1">
+
+                    {/* Content */}
+                    <h3 className="text-lg font-semibold text-slate-800 mb-2">
                       {step.title}
                     </h3>
+
                     <p className="text-slate-600 text-sm leading-relaxed">
                       {step.description}
                     </p>
+
                   </div>
-                </div>
-              ))}
+                ))}
+
+              </div>
             </div>
+
           </div>
         </section>
       )}
 
       {/* Related Services */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-16 text-center">
             Related Services
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
             {relatedServices.map((service, i) => (
               <Link
                 key={i}

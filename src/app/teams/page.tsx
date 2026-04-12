@@ -6,20 +6,6 @@ export const metadata: Metadata = {
   title: "Our Team - Trackepay Fintech (OPC) Pvt Ltd",
   description:
     "Meet the Trackepay team. Access a trusted collection of insights, tools, and expertise from passionate professionals dedicated to your success.",
-  keywords: ["trackepay team", "our team", "leadership team", "software developers", "IT professionals"],
-  openGraph: {
-    title: "Our Team - Trackepay Fintech (OPC) Pvt Ltd",
-    description: "Meet the Trackepay team. Access a trusted collection of insights, tools, and expertise from passionate professionals dedicated to your success.",
-    url: "https://www.trackepay.in/teams/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Our Team - Trackepay Fintech (OPC) Pvt Ltd",
-    description: "Meet the Trackepay team. Access a trusted collection of insights, tools, and expertise from passionate professionals dedicated to your success.",
-  },
 };
 
 const teamMembers = [
@@ -60,7 +46,7 @@ const teamMembers = [
 const clientLogos = [
   { src: "/images/clients/digital-domination.webp", alt: "Digital Domination" },
   { src: "/images/clients/nuancenext.webp", alt: "NuanceNext" },
-  { src: "/images/clients/client3.png", alt: "Client Partner" },
+  { src: "/images/clients/client3.png", alt: "Client" },
   { src: "/images/clients/pulse-prime.png", alt: "Pulse Prime" },
   { src: "/images/clients/bikaash-baahan.png", alt: "Bikaash Baahan" },
   { src: "/images/clients/logowa.png", alt: "Logowa" },
@@ -89,47 +75,47 @@ export default function TeamsPage() {
       </section>
 
       {/* Team Grid - 2x2 */}
-      <section id="team" className="py-20 lg:py-28 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {teamMembers.map((member) => (
-              <div
-                key={member.name}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="flex items-start gap-5 mb-6">
-                  {/* Avatar with photo or gradient fallback */}
-                  {member.photo ? (
-                    <div className="relative h-16 w-16 rounded-2xl overflow-hidden flex-shrink-0">
-                      <Image
-                        src={member.photo}
-                        alt={member.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  ) : (
-                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#110F33] to-[#1a1850] text-white text-xl font-bold flex-shrink-0">
-                      {member.initials}
-                    </div>
-                  )}
-                  <div>
-                    <h3 className="text-lg font-bold text-slate-900">
-                      {member.name}
-                    </h3>
-                    <p className="text-xs font-semibold uppercase tracking-wider text-orange-500 mt-1">
-                      {member.role}
-                    </p>
-                  </div>
-                </div>
-                <p className="text-slate-500 leading-relaxed">
-                  &ldquo;{member.quote}&rdquo;
-                </p>
-              </div>
-            ))}
+     <section id="team" className="py-20 lg:py-28 bg-[#f5f6f8]">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-20">
+    {teamMembers.map((member, index) => (
+      <div
+        key={member.name}
+        className={`flex flex-col md:flex-row items-center gap-10 ${
+          index % 2 !== 0 ? "md:flex-row-reverse" : ""
+        }`}
+      >
+        {/* Image */}
+        {member.photo && (
+          <div className="w-full md:w-1/2 flex justify-center">
+            <div className="relative w-[260px] h-[320px] md:w-[300px] md:h-[360px] rounded-2xl overflow-hidden">
+              <Image
+                src={member.photo}
+                alt={member.name}
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
+        )}
+
+        {/* Content */}
+        <div className="w-full md:w-1/2">
+          <h3 className="text-2xl lg:text-3xl font-bold text-slate-900">
+            {member.name}
+          </h3>
+
+          <p className="text-sm font-semibold uppercase tracking-wider text-orange-500 mt-2 mb-4">
+            {member.role}
+          </p>
+
+          <p className="text-slate-500 leading-relaxed text-base">
+            {member.quote}
+          </p>
         </div>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* Client Logos - Marquee */}
       <section className="py-16 lg:py-20 bg-slate-50 border-t border-slate-100">

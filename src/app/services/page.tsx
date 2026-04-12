@@ -25,20 +25,6 @@ export const metadata: Metadata = {
   title: "Services - Trackepay Fintech",
   description:
     "We help businesses evolve through smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
-  keywords: ["IT services", "software development services", "digital marketing", "web development", "mobile app development", "data analytics"],
-  openGraph: {
-    title: "Services - Trackepay Fintech",
-    description: "We help businesses evolve through smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
-    url: "https://www.trackepay.in/services/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Services - Trackepay Fintech",
-    description: "We help businesses evolve through smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
-  },
 };
 
 const methodology = [
@@ -167,7 +153,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#F8FAFC] py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-bg-muted py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
@@ -183,7 +169,7 @@ export default function ServicesPage() {
                 and scalability.
               </p>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/images/wp/corporate-services-hero.webp"
                 alt="Trackepay digital services"
@@ -228,7 +214,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services by Category */}
-      <section className="py-20 lg:py-28 bg-[#F8FAFC]">
+      <section className="py-20 lg:py-28 bg-bg-muted">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">

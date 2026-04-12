@@ -7,20 +7,6 @@ export const metadata: Metadata = {
   title: "Talent Acquisition | Trackepay",
   description:
     "Recruitment and staffing solutions to help you find, attract, and retain the best talent for your organization.",
-  keywords: ["talent acquisition", "recruitment services", "IT staffing", "hiring solutions", "tech recruitment"],
-  openGraph: {
-    title: "Talent Acquisition | Trackepay",
-    description: "Recruitment and staffing solutions to help you find, attract, and retain the best talent for your organization.",
-    url: "https://www.trackepay.in/talent-acquisition/",
-    siteName: "Trackepay Fintech",
-    type: "website",
-    locale: "en_IN",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Talent Acquisition | Trackepay",
-    description: "Recruitment and staffing solutions to help you find, attract, and retain the best talent for your organization.",
-  },
 };
 
 export default function TalentAcquisitionPage() {
