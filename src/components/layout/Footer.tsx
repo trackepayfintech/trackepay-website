@@ -24,8 +24,8 @@ const productLinks = [
 
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Terms & Conditions", href: "/terms-and-conditions" },
-  { label: "Certifications", href: "/about-us" },
+  { label: "Terms & Conditions", href: "/terms-conditions" },
+  { label: "Certifications", href: "/our-certifications" },
 ];
 
 function FacebookIcon({ className }: { className?: string }) {
@@ -61,10 +61,10 @@ function XIcon({ className }: { className?: string }) {
 }
 
 const socialLinks = [
-  { label: "Facebook", href: "https://facebook.com", Icon: FacebookIcon },
-  { label: "LinkedIn", href: "https://linkedin.com", Icon: LinkedInIcon },
-  { label: "Instagram", href: "https://instagram.com", Icon: InstagramIcon },
-  { label: "X", href: "https://x.com", Icon: XIcon },
+  { label: "Facebook", href: "https://www.facebook.com/trackepayfintech", Icon: FacebookIcon },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/trackepayfintech", Icon: LinkedInIcon },
+  { label: "Instagram", href: "https://www.instagram.com/trackepayfintech", Icon: InstagramIcon },
+  { label: "X", href: "https://x.com/trackepaytech", Icon: XIcon },
 ];
 
 export default function Footer() {
@@ -216,7 +216,7 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-[12px] text-white/30">
-              &copy; 2025 Trackepay Fintech (OPC) Pvt Ltd. All rights reserved.
+              &copy; 2025–2026 Trackepay Fintech (OPC) Pvt Ltd. All rights reserved.
             </p>
             <p className="text-[12px] text-white/30">
               Bhubaneswar, India &#127470;&#127475;

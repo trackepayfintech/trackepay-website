@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import type { LucideIcon } from "lucide-react";
 import {
   Globe,
   Code,
@@ -10,6 +10,11 @@ import {
   Palette,
   ArrowRight,
   ChevronRight,
+  Puzzle,
+  ShieldCheck,
+  LayoutDashboard,
+  Layers,
+  Cloud,
 } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
 
@@ -78,39 +83,39 @@ const serviceCards = [
   },
 ];
 
-const infraFeatures = [
+const infraFeatures: { icon: LucideIcon; title: string; description: string }[] = [
   {
-    image: "/images/wp/vault-hosting-technology-features-icon-1.webp",
+    icon: Puzzle,
     title: "Smart App Integration",
     description:
       "Seamlessly connect your apps and tools for unified operations and smooth data flow.",
   },
   {
-    image: "/images/wp/vault-hosting-technology-features-icon-2.webp",
+    icon: Globe,
     title: "Custom Domain Setup",
     description:
       "Professional custom domain configuration to establish your brand presence online.",
   },
   {
-    image: "/images/wp/vault-hosting-technology-features-icon-3.webp",
+    icon: ShieldCheck,
     title: "24/7 Data Security",
     description:
       "Enterprise-grade security protocols to protect your data around the clock.",
   },
   {
-    image: "/images/wp/vault-hosting-technology-features-icon-4.webp",
+    icon: LayoutDashboard,
     title: "User-Friendly Dashboard",
     description:
       "Intuitive dashboards that make managing your business easy and efficient.",
   },
   {
-    image: "/images/wp/vault-hosting-technology-features-icon-5.webp",
+    icon: Layers,
     title: "Flexible Resources",
     description:
       "Scalable infrastructure that grows with your business needs without disruption.",
   },
   {
-    image: "/images/wp/vault-hosting-technology-features-icon-6.webp",
+    icon: Cloud,
     title: "Global Cloud Access",
     description:
       "Access your solutions from anywhere in the world with reliable cloud-based infrastructure.",
@@ -208,14 +213,8 @@ export default function TechnologyPage() {
                 key={i}
                 className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="w-14 h-14 rounded-xl bg-slate-900/5 flex items-center justify-center mb-5">
-                  <Image
-                    src={feature.image}
-                    alt={feature.title}
-                    width={40}
-                    height={40}
-                    className="object-contain"
-                  />
+                <div className="w-14 h-14 rounded-xl bg-orange-50 flex items-center justify-center mb-5">
+                  <feature.icon className="w-6 h-6 text-orange-500" />
                 </div>
                 <h3 className="text-lg font-semibold text-slate-800 mb-2">
                   {feature.title}
@@ -229,25 +228,23 @@ export default function TechnologyPage() {
         </div>
       </section>
 
-      {/* Trust Image */}
+      {/* Trust Indicator */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center">
             <span className="inline-block bg-orange-50 text-orange-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
               Trusted Platform
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
               Built on Trust & Reliability
             </h2>
-          </div>
-          <div className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg">
-            <Image
-              src="/images/wp/Hosting-Trust-Image.webp"
-              alt="Trackepay trusted hosting and technology platform"
-              width={1024}
-              height={600}
-              className="w-full h-auto object-cover"
-            />
+            <p className="text-slate-600 max-w-2xl mx-auto text-lg mb-10">
+              Our technology stack is designed with security, uptime, and performance at its core.
+            </p>
+            <div className="flex items-center justify-center gap-3">
+              <ShieldCheck className="w-10 h-10 text-orange-500" />
+              <span className="text-slate-700 font-medium text-lg">Enterprise-grade security & 99.9% uptime</span>
+            </div>
           </div>
         </div>
       </section>

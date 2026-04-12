@@ -31,7 +31,6 @@ export default function SoftwareCrmPage() {
     <ServicePageTemplate
       heroTitle="Software & CRM Development Services"
       heroSubtitle="Transform your business through technology. We design and develop custom software and CRM solutions that automate operations, enhance customer relationships, and accelerate growth."
-      heroImageSrc="/images/wp/Digital-Marketing-Services-Process-Image-1024x442.webp"
       breadcrumbLabel="Software & CRM"
       introparagraphs={[
         "At Trackepay, we believe that the right software can transform any business. Our team of experienced developers and strategists works closely with you to understand your unique challenges and build solutions that address them head-on.",

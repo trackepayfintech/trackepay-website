@@ -60,7 +60,7 @@ const teamMembers = [
 const clientLogos = [
   { src: "/images/clients/digital-domination.webp", alt: "Digital Domination" },
   { src: "/images/clients/nuancenext.webp", alt: "NuanceNext" },
-  { src: "/images/clients/client3.png", alt: "Client" },
+  { src: "/images/clients/client3.png", alt: "Client Partner" },
   { src: "/images/clients/pulse-prime.png", alt: "Pulse Prime" },
   { src: "/images/clients/bikaash-baahan.png", alt: "Bikaash Baahan" },
   { src: "/images/clients/logowa.png", alt: "Logowa" },

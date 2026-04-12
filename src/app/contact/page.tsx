@@ -43,17 +43,89 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* Form Placeholder */}
-          <div className="max-w-3xl mx-auto mt-12">
-            <div className="min-h-[500px] bg-slate-50 rounded-2xl border-2 border-dashed border-slate-300 flex items-center justify-center">
-              <div className="text-center">
-                <FileText className="w-12 h-12 text-slate-400 mx-auto mb-4" />
-                <p className="text-slate-500 text-sm font-medium">
-                  Contact form will be embedded here
-                </p>
+          {/* Contact Form */}
+          <form
+            action="https://formspree.io/f/placeholder"
+            method="POST"
+            className="max-w-3xl mx-auto mt-12 bg-white rounded-2xl border border-slate-200 shadow-sm p-8 sm:p-10 space-y-6"
+          >
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1.5">
+                  Name <span className="text-orange-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Your full name"
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-shadow"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1.5">
+                  Email <span className="text-orange-500">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-shadow"
+                />
               </div>
             </div>
-          </div>
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1.5">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 98765 43210"
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-shadow"
+                />
+              </div>
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-1.5">
+                  Subject <span className="text-orange-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  placeholder="How can we help?"
+                  className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-shadow"
+                />
+              </div>
+            </div>
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1.5">
+                Message <span className="text-orange-500">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows={6}
+                placeholder="Tell us about your project or inquiry..."
+                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-shadow resize-vertical"
+              />
+            </div>
+            <div>
+              <button
+                type="submit"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3.5 rounded-xl text-sm transition-colors duration-200 shadow-sm hover:shadow-md"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 
@@ -108,7 +180,7 @@ export default function ContactPage() {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-4 mt-16">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/trackepayfintech"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 border border-white/10"
@@ -123,7 +195,7 @@ export default function ContactPage() {
               </svg>
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/trackepayfintech"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 border border-white/10"
@@ -138,7 +210,7 @@ export default function ContactPage() {
               </svg>
             </Link>
             <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/trackepayfintech"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 border border-white/10"
