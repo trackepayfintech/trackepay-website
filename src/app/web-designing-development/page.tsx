@@ -20,6 +20,20 @@ export const metadata: Metadata = {
   title: "Web Designing & Development - Trackepay Fintech",
   description:
     "Elevate your brand online with expert Web & App Development. We craft responsive, cutting-edge websites and mobile apps.",
+  keywords: ["web design services", "web development", "website development company", "responsive web design", "custom website development"],
+  openGraph: {
+    title: "Web Designing & Development - Trackepay Fintech",
+    description: "Elevate your brand online with expert Web & App Development. We craft responsive, cutting-edge websites and mobile apps.",
+    url: "https://www.trackepay.in/web-designing-development/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Designing & Development - Trackepay Fintech",
+    description: "Elevate your brand online with expert Web & App Development. We craft responsive, cutting-edge websites and mobile apps.",
+  },
 };
 
 const serviceCards = [

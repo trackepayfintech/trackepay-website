@@ -25,6 +25,20 @@ export const metadata: Metadata = {
   title: "Services - Trackepay Fintech",
   description:
     "We help businesses evolve through smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
+  keywords: ["IT services", "software development services", "digital marketing", "web development", "mobile app development", "data analytics"],
+  openGraph: {
+    title: "Services - Trackepay Fintech",
+    description: "We help businesses evolve through smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
+    url: "https://www.trackepay.in/services/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services - Trackepay Fintech",
+    description: "We help businesses evolve through smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
+  },
 };
 
 const methodology = [

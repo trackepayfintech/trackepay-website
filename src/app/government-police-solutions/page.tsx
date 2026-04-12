@@ -30,6 +30,20 @@ export const metadata: Metadata = {
     "Government & Police Solutions - Smart Patrol Management | Trackepay",
   description:
     "AI-powered patrol management system for police departments. QR patrolling, live tracking, face recognition, incident reporting & advanced analytics.",
+  keywords: ["government solutions", "police management system", "smart policing", "patrol management", "law enforcement technology", "e-governance"],
+  openGraph: {
+    title: "Government & Police Solutions - Smart Patrol Management | Trackepay",
+    description: "AI-powered patrol management system for police departments. QR patrolling, live tracking, face recognition, incident reporting & advanced analytics.",
+    url: "https://www.trackepay.in/government-police-solutions/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Government & Police Solutions - Smart Patrol Management | Trackepay",
+    description: "AI-powered patrol management system for police departments. QR patrolling, live tracking, face recognition, incident reporting & advanced analytics.",
+  },
 };
 
 const stats = [

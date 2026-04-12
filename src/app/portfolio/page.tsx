@@ -7,6 +7,20 @@ export const metadata: Metadata = {
   title: "Portfolio | Trackepay",
   description:
     "Explore our portfolio of digital solutions, software products, and successful client projects at Trackepay.",
+  keywords: ["trackepay portfolio", "software projects", "digital solutions portfolio", "client projects", "case studies"],
+  openGraph: {
+    title: "Portfolio | Trackepay",
+    description: "Explore our portfolio of digital solutions, software products, and successful client projects at Trackepay.",
+    url: "https://www.trackepay.in/portfolio/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio | Trackepay",
+    description: "Explore our portfolio of digital solutions, software products, and successful client projects at Trackepay.",
+  },
 };
 
 export default function PortfolioPage() {

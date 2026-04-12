@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Trackepay",
   description:
     "Read the privacy policy of Trackepay Fintech (OPC) Pvt Ltd. Learn how we collect, use, and protect your personal data.",
+  keywords: ["privacy policy", "data protection", "trackepay privacy", "user data policy"],
+  openGraph: {
+    title: "Privacy Policy | Trackepay",
+    description: "Read the privacy policy of Trackepay Fintech (OPC) Pvt Ltd. Learn how we collect, use, and protect your personal data.",
+    url: "https://www.trackepay.in/privacy-policy/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Trackepay",
+    description: "Read the privacy policy of Trackepay Fintech (OPC) Pvt Ltd. Learn how we collect, use, and protect your personal data.",
+  },
 };
 
 export default function PrivacyPolicyPage() {
@@ -134,10 +148,10 @@ export default function PrivacyPolicyPage() {
                   <li>
                     Email:{" "}
                     <a
-                      href="mailto:director@trackepay.com"
+                      href="mailto:director@trackepay.in"
                       className="text-orange-500 hover:text-orange-600 hover:underline transition-colors"
                     >
-                      director@trackepay.com
+                      director@trackepay.in
                     </a>
                   </li>
                   <li>

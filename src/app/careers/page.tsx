@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: "Careers | Trackepay",
   description:
     "Unlock your potential—explore growing career fields and find the path that aligns with your passion and skills at Trackepay.",
+  keywords: ["careers at trackepay", "IT jobs", "software developer jobs", "Bhubaneswar jobs", "tech careers India"],
+  openGraph: {
+    title: "Careers | Trackepay",
+    description: "Unlock your potential—explore growing career fields and find the path that aligns with your passion and skills at Trackepay.",
+    url: "https://www.trackepay.in/careers/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Careers | Trackepay",
+    description: "Unlock your potential—explore growing career fields and find the path that aligns with your passion and skills at Trackepay.",
+  },
 };
 
 export default function CareersPage() {

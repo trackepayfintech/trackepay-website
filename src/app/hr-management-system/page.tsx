@@ -13,6 +13,20 @@ export const metadata: Metadata = {
   title: "HR Management System | Trackepay",
   description:
     "Optimize your workforce with a powerful HR Management System that streamlines recruitment, payroll, attendance, employee records, and compliance—all in one unified platform.",
+  keywords: ["HR management system", "HRMS software", "payroll management", "employee management", "recruitment software", "attendance system"],
+  openGraph: {
+    title: "HR Management System | Trackepay",
+    description: "Optimize your workforce with a powerful HR Management System that streamlines recruitment, payroll, attendance, employee records, and compliance—all in one unified platform.",
+    url: "https://www.trackepay.in/hr-management-system/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HR Management System | Trackepay",
+    description: "Optimize your workforce with a powerful HR Management System that streamlines recruitment, payroll, attendance, employee records, and compliance—all in one unified platform.",
+  },
 };
 
 export default function HRManagementSystemPage() {

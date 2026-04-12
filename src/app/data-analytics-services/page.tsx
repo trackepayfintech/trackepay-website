@@ -14,6 +14,20 @@ export const metadata: Metadata = {
   title: "Data Analytics Services - Trackepay Fintech",
   description:
     "We specialize in harnessing the full potential of your data to drive informed decisions and business growth.",
+  keywords: ["data analytics services", "business intelligence", "data visualization", "analytics consulting", "data-driven decisions"],
+  openGraph: {
+    title: "Data Analytics Services - Trackepay Fintech",
+    description: "We specialize in harnessing the full potential of your data to drive informed decisions and business growth.",
+    url: "https://www.trackepay.in/data-analytics-services/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Data Analytics Services - Trackepay Fintech",
+    description: "We specialize in harnessing the full potential of your data to drive informed decisions and business growth.",
+  },
 };
 
 export default function DataAnalyticsPage() {

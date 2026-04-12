@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: "Career Application | Trackepay",
   description:
     "Apply for a career at Trackepay. Fill out our career application form to join our growing team.",
+  keywords: ["trackepay careers", "job application", "career application form", "IT jobs Bhubaneswar"],
+  openGraph: {
+    title: "Career Application | Trackepay",
+    description: "Apply for a career at Trackepay. Fill out our career application form to join our growing team.",
+    url: "https://www.trackepay.in/career-form/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Career Application | Trackepay",
+    description: "Apply for a career at Trackepay. Fill out our career application form to join our growing team.",
+  },
 };
 
 export default function CareerFormPage() {

@@ -14,6 +14,20 @@ export const metadata: Metadata = {
   title: "Digital Marketing Services - Trackepay Fintech",
   description:
     "Comprehensive digital marketing services including SEO, PPC, social media marketing, email marketing, and content marketing.",
+  keywords: ["digital marketing services", "SEO services", "PPC advertising", "social media marketing", "email marketing", "content marketing", "Bhubaneswar"],
+  openGraph: {
+    title: "Digital Marketing Services - Trackepay Fintech",
+    description: "Comprehensive digital marketing services including SEO, PPC, social media marketing, email marketing, and content marketing.",
+    url: "https://www.trackepay.in/digital-marketing-services/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Marketing Services - Trackepay Fintech",
+    description: "Comprehensive digital marketing services including SEO, PPC, social media marketing, email marketing, and content marketing.",
+  },
 };
 
 export default function DigitalMarketingPage() {

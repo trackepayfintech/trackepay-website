@@ -18,6 +18,20 @@ export const metadata: Metadata = {
   title: "GreenBubble - WhatsApp Business API | Trackepay",
   description:
     "GreenBubble is an enterprise WhatsApp Business API platform for automated messaging, broadcasting, campaigns, AI chat assistance, and team collaboration.",
+  keywords: ["WhatsApp Business API", "GreenBubble", "WhatsApp marketing", "business messaging", "WhatsApp automation", "broadcast messaging"],
+  openGraph: {
+    title: "GreenBubble - WhatsApp Business API | Trackepay",
+    description: "GreenBubble is an enterprise WhatsApp Business API platform for automated messaging, broadcasting, campaigns, AI chat assistance, and team collaboration.",
+    url: "https://www.trackepay.in/greenbubble-whatsapp-business-api/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GreenBubble - WhatsApp Business API | Trackepay",
+    description: "GreenBubble is an enterprise WhatsApp Business API platform for automated messaging, broadcasting, campaigns, AI chat assistance, and team collaboration.",
+  },
 };
 
 const features = [

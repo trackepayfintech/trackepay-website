@@ -23,10 +23,20 @@ export const metadata: Metadata = {
     "Trackepay - Mission-Critical Software for Governments & Enterprises",
   description:
     "From smart policing systems for Indian law enforcement to enterprise SaaS — Trackepay delivers mission-critical technology trusted by 50+ police stations and 150+ enterprises.",
+  keywords: ["trackepay", "mission-critical software", "government software", "enterprise SaaS", "smart policing", "IT services India", "fintech solutions", "Bhubaneswar"],
   openGraph: {
     title: "Trackepay — Software Governments & Enterprises Rely On",
     description:
       "Mission-critical technology with 99.9% uptime. Smart policing, enterprise SaaS, and global IT services.",
+    url: "https://www.trackepay.in/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trackepay - Mission-Critical Software for Governments & Enterprises",
+    description: "From smart policing systems for Indian law enforcement to enterprise SaaS — Trackepay delivers mission-critical technology trusted by 50+ police stations and 150+ enterprises.",
   },
 };
 

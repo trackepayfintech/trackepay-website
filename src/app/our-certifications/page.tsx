@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: "Our Certifications | Trackepay",
   description:
     "Explore the certifications and quality standards achieved by Trackepay Fintech, demonstrating our commitment to excellence and industry best practices.",
+  keywords: ["ISO certification", "quality certifications", "ISO 9001", "trackepay certifications", "quality standards"],
+  openGraph: {
+    title: "Our Certifications | Trackepay",
+    description: "Explore the certifications and quality standards achieved by Trackepay Fintech, demonstrating our commitment to excellence and industry best practices.",
+    url: "https://www.trackepay.in/our-certifications/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Certifications | Trackepay",
+    description: "Explore the certifications and quality standards achieved by Trackepay Fintech, demonstrating our commitment to excellence and industry best practices.",
+  },
 };
 
 const certifications = [

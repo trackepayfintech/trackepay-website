@@ -17,6 +17,20 @@ export const metadata: Metadata = {
   title: "Technology - Trackepay Fintech",
   description:
     "Smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
+  keywords: ["technology stack", "tech expertise", "software technologies", "development tools", "programming languages"],
+  openGraph: {
+    title: "Technology - Trackepay Fintech",
+    description: "Smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
+    url: "https://www.trackepay.in/technology/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Technology - Trackepay Fintech",
+    description: "Smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
+  },
 };
 
 const serviceCards = [

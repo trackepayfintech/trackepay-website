@@ -8,6 +8,20 @@ export const metadata: Metadata = {
     "Top Strategies for Effective Online Advertising in Bhubaneswar | Trackepay",
   description:
     "Discover the top strategies for effective online advertising in Bhubaneswar including audience targeting, platform selection, content creation, and performance measurement.",
+  keywords: ["online advertising Bhubaneswar", "digital advertising strategies", "PPC Bhubaneswar", "Google Ads Odisha", "social media advertising"],
+  openGraph: {
+    title: "Top Strategies for Effective Online Advertising in Bhubaneswar | Trackepay",
+    description: "Discover the top strategies for effective online advertising in Bhubaneswar including audience targeting, platform selection, content creation, and performance measurement.",
+    url: "https://www.trackepay.in/top-strategies-for-effective-online-advertising-in-bhubaneswar/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Top Strategies for Effective Online Advertising in Bhubaneswar | Trackepay",
+    description: "Discover the top strategies for effective online advertising in Bhubaneswar including audience targeting, platform selection, content creation, and performance measurement.",
+  },
 };
 
 export default function BlogPostPage() {

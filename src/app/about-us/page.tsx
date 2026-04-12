@@ -16,6 +16,20 @@ export const metadata: Metadata = {
   title: "About Us - Trackepay Fintech (OPC) Pvt Ltd",
   description:
     "Learn about Trackepay's mission to shape a better future through smart, modern engineering. Founded in 2021, we deliver innovative digital solutions.",
+  keywords: ["about trackepay", "trackepay fintech", "IT company Bhubaneswar", "software company India", "digital solutions", "founded 2021"],
+  openGraph: {
+    title: "About Us - Trackepay Fintech (OPC) Pvt Ltd",
+    description: "Learn about Trackepay's mission to shape a better future through smart, modern engineering. Founded in 2021, we deliver innovative digital solutions.",
+    url: "https://www.trackepay.in/about-us/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us - Trackepay Fintech (OPC) Pvt Ltd",
+    description: "Learn about Trackepay's mission to shape a better future through smart, modern engineering. Founded in 2021, we deliver innovative digital solutions.",
+  },
 };
 
 const values = [

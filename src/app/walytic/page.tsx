@@ -16,6 +16,20 @@ export const metadata: Metadata = {
   title: "Walytic - WhatsApp API System | Trackepay",
   description:
     "Walytic is a WhatsApp API system for automating WhatsApp communication at scale with session management, bulk campaigns, webhooks, and more.",
+  keywords: ["Walytic", "web analytics", "website tracking", "analytics dashboard", "visitor analytics", "real-time analytics"],
+  openGraph: {
+    title: "Walytic - WhatsApp API System | Trackepay",
+    description: "Walytic is a WhatsApp API system for automating WhatsApp communication at scale with session management, bulk campaigns, webhooks, and more.",
+    url: "https://www.trackepay.in/walytic/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Walytic - WhatsApp API System | Trackepay",
+    description: "Walytic is a WhatsApp API system for automating WhatsApp communication at scale with session management, bulk campaigns, webhooks, and more.",
+  },
 };
 
 const features = [

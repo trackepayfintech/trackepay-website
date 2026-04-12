@@ -14,6 +14,20 @@ export const metadata: Metadata = {
   title: "Branding Building Packages - Trackepay Fintech",
   description:
     "Build a strong, memorable brand identity that resonates with your audience. Complete branding packages for startups and growing businesses.",
+  keywords: ["branding packages", "brand identity design", "startup branding", "brand building services", "logo design", "brand strategy"],
+  openGraph: {
+    title: "Branding Building Packages - Trackepay Fintech",
+    description: "Build a strong, memorable brand identity that resonates with your audience. Complete branding packages for startups and growing businesses.",
+    url: "https://www.trackepay.in/branding-building-packages/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Branding Building Packages - Trackepay Fintech",
+    description: "Build a strong, memorable brand identity that resonates with your audience. Complete branding packages for startups and growing businesses.",
+  },
 };
 
 export default function BrandingPage() {

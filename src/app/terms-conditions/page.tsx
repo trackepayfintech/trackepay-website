@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: "Terms & Conditions | Trackepay",
   description:
     "Read the terms and conditions governing the use of Trackepay Fintech services, software, and website.",
+  keywords: ["terms and conditions", "terms of service", "trackepay terms", "legal terms"],
+  openGraph: {
+    title: "Terms & Conditions | Trackepay",
+    description: "Read the terms and conditions governing the use of Trackepay Fintech services, software, and website.",
+    url: "https://www.trackepay.in/terms-conditions/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms & Conditions | Trackepay",
+    description: "Read the terms and conditions governing the use of Trackepay Fintech services, software, and website.",
+  },
 };
 
 export default function TermsConditionsPage() {

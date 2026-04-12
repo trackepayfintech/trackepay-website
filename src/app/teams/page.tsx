@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: "Our Team - Trackepay Fintech (OPC) Pvt Ltd",
   description:
     "Meet the Trackepay team. Access a trusted collection of insights, tools, and expertise from passionate professionals dedicated to your success.",
+  keywords: ["trackepay team", "our team", "leadership team", "software developers", "IT professionals"],
+  openGraph: {
+    title: "Our Team - Trackepay Fintech (OPC) Pvt Ltd",
+    description: "Meet the Trackepay team. Access a trusted collection of insights, tools, and expertise from passionate professionals dedicated to your success.",
+    url: "https://www.trackepay.in/teams/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Team - Trackepay Fintech (OPC) Pvt Ltd",
+    description: "Meet the Trackepay team. Access a trusted collection of insights, tools, and expertise from passionate professionals dedicated to your success.",
+  },
 };
 
 const teamMembers = [

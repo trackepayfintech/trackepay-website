@@ -7,6 +7,20 @@ export const metadata: Metadata = {
   title: "Contact Us | Trackepay",
   description:
     "Get in touch with Trackepay. If you have any inquiries or require further information, our team will respond at the earliest opportunity.",
+  keywords: ["contact trackepay", "get in touch", "IT company contact", "Bhubaneswar office", "software company contact"],
+  openGraph: {
+    title: "Contact Us | Trackepay",
+    description: "Get in touch with Trackepay. If you have any inquiries or require further information, our team will respond at the earliest opportunity.",
+    url: "https://www.trackepay.in/contact/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Trackepay",
+    description: "Get in touch with Trackepay. If you have any inquiries or require further information, our team will respond at the earliest opportunity.",
+  },
 };
 
 export default function ContactPage() {

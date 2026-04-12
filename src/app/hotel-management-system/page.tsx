@@ -16,6 +16,20 @@ export const metadata: Metadata = {
   title: "Restaurant Management System | Trackepay",
   description:
     "A smart and efficient solution to manage restaurant operations including orders, billing, kitchen management, inventory, and staff scheduling.",
+  keywords: ["restaurant management system", "hotel management software", "order management", "billing system", "kitchen management", "POS system"],
+  openGraph: {
+    title: "Restaurant Management System | Trackepay",
+    description: "A smart and efficient solution to manage restaurant operations including orders, billing, kitchen management, inventory, and staff scheduling.",
+    url: "https://www.trackepay.in/hotel-management-system/",
+    siteName: "Trackepay Fintech",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Restaurant Management System | Trackepay",
+    description: "A smart and efficient solution to manage restaurant operations including orders, billing, kitchen management, inventory, and staff scheduling.",
+  },
 };
 
 export default function RestaurantManagementSystemPage() {
