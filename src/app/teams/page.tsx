@@ -84,19 +84,14 @@ export default function TeamsPage() {
           index % 2 !== 0 ? "md:flex-row-reverse" : ""
         }`}
       >
-        {/* Image */}
-        {member.photo && (
-          <div className="w-full md:w-1/2 flex justify-center">
-            <div className="relative w-[260px] h-[320px] md:w-[300px] md:h-[360px] rounded-2xl overflow-hidden">
-              <Image
-                src={member.photo}
-                alt={member.name}
-                fill
-                className="object-cover"
-              />
-            </div>
+        {/* Avatar placeholder */}
+        <div className="w-full md:w-1/2 flex justify-center">
+          <div className="w-[260px] h-[320px] md:w-[300px] md:h-[360px] rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+            <span className="text-5xl font-bold text-slate-300">
+              {member.initials}
+            </span>
           </div>
-        )}
+        </div>
 
         {/* Content */}
         <div className="w-full md:w-1/2">

@@ -258,28 +258,20 @@ export default function AboutUsPage() {
             {teamMembers.map((member) => (
               <div
                 key={member.name}
-                className="group bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden"
+                className="group bg-white rounded-2xl shadow-sm border border-slate-200/60 hover:shadow-md hover:border-slate-300/60 transition-all duration-300 overflow-hidden"
               >
-                {/* Gradient Header */}
-                <div className="h-28 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 relative">
+                {/* Brand Header */}
+                <div className="h-24 bg-gradient-to-br from-[#F48120] to-[#d97218] relative">
+                  {/* Subtle pattern */}
+                  <div className="absolute inset-0 bg-grid-pattern opacity-20" />
 
                   {/* Avatar */}
                   <div className="absolute left-1/2 -bottom-12 -translate-x-1/2">
-                    {member.photo ? (
-                      <div className="w-24 h-24 rounded-full border-4 border-white bg-white shadow-md flex items-center justify-center overflow-hidden">
-                        <Image
-                          src={member.photo}
-                          alt={member.name}
-                          width={96}
-                          height={96}
-                          className="object-contain p-2"
-                        />
-                      </div>
-                    ) : (
-                      <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-white bg-linear-to-br from-navy to-navy-light text-white text-lg font-bold shadow-md">
+                    <div className="w-24 h-24 rounded-full border-4 border-white bg-slate-100 shadow-md overflow-hidden flex items-center justify-center">
+                      <span className="text-xl font-bold text-slate-400">
                         {member.initials}
-                      </div>
-                    )}
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -289,23 +281,22 @@ export default function AboutUsPage() {
                     {member.name}
                   </h3>
 
-                  <div className="w-10 h-1 bg-purple-500 mx-auto my-2 rounded-full"></div>
+                  <div className="w-8 h-0.5 bg-[#F48120] mx-auto my-2.5 rounded-full" />
 
-                  <span className="inline-block text-xs px-4 py-1 rounded-full bg-purple-100 text-purple-600 font-medium mb-4">
+                  <span className="inline-block text-xs px-3 py-1 rounded-full bg-orange-50 text-[#F48120] font-medium mb-4">
                     {member.role}
                   </span>
 
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <p className="text-sm text-slate-500 leading-relaxed">
                     {member.desc}
                   </p>
 
-                  {/* ✅ LinkedIn Button */}
                   {member.linkedin ? (
                     <a
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-6 w-full flex items-center justify-center gap-2 text-sm bg-linear-to-r from-blue-600 to-purple-600 text-white py-2.5 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 hover:scale-[1.02] active:scale-[0.98]"
+                      className="mt-5 w-full flex items-center justify-center gap-2 text-sm bg-slate-900 text-white py-2.5 rounded-lg font-medium transition-all duration-200 hover:bg-slate-800 active:scale-[0.98]"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -318,7 +309,7 @@ export default function AboutUsPage() {
                       Connect on LinkedIn
                     </a>
                   ) : (
-                    <div className="mt-6 w-full text-sm bg-gray-200 text-gray-400 py-2.5 rounded-lg">
+                    <div className="mt-5 w-full text-sm bg-slate-100 text-slate-400 py-2.5 rounded-lg">
                       Not Available
                     </div>
                   )}
