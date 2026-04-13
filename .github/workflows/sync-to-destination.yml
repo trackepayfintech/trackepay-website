@@ -8,6 +8,7 @@ on:
 
 jobs:
   sync:
+    if: github.repository == 'digitaldominationio/trackepaynext'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source repo
