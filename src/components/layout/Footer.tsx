@@ -1,10 +1,8 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
+import { Mail, Phone, MapPin } from "lucide-react";
 
-/* ---------------- Icons ---------------- */
+/* ────────────── Icons ────────────── */
 
 function FacebookIcon({ className }: { className?: string }) {
   return (
@@ -30,137 +28,182 @@ function InstagramIcon({ className }: { className?: string }) {
   );
 }
 
-
-
-/* ---------------- Data ---------------- */
+/* ────────────── Data ────────────── */
 
 const solutionsLinks = [
   { label: "Government & Police", href: "/government-police-solutions" },
-  { label: "Enterprise & Private", href: "/hr-management-system" },
-  { label: "IT Services", href: "/web-designing-development" },
-  { label: "Marketing & Branding", href: "/digital-marketing-services" },
+  { label: "HR Management System", href: "/hr-management-system" },
+  { label: "Restaurant Management", href: "/hotel-management-system" },
+  { label: "Web Design & Development", href: "/web-designing-development" },
+  { label: "Digital Marketing", href: "/digital-marketing-services" },
 ];
 
 const companyLinks = [
   { label: "About Us", href: "/about-us" },
-  { label: "Team", href: "/teams" },
+  { label: "Our Team", href: "/teams" },
   { label: "Careers", href: "/careers" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Certifications", href: "/our-certifications" },
   { label: "Contact", href: "/contact" },
 ];
 
 const productLinks = [
-  { label: "HRMS", href: "/hr-management-system" },
-  { label: "RMS", href: "/hotel-management-system" },
   { label: "GreenBubble", href: "/greenbubble-whatsapp-business-api" },
   { label: "Walytic", href: "/walytic" },
+  { label: "HRMS", href: "/hr-management-system" },
+  { label: "Attendance System", href: "/attendance-management-system" },
 ];
 
 const socialLinks = [
-  { label: "Facebook", href: "https://facebook.com", Icon: FacebookIcon },
-  { label: "LinkedIn", href: "https://linkedin.com", Icon: LinkedInIcon },
-  { label: "Instagram", href: "https://instagram.com", Icon: InstagramIcon },
- 
+  { label: "Facebook", href: "https://www.facebook.com/trackepay", Icon: FacebookIcon },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/trackepay", Icon: LinkedInIcon },
+  { label: "Instagram", href: "https://www.instagram.com/trackepay", Icon: InstagramIcon },
 ];
 
-/* ---------------- Animation ---------------- */
-
-const container: Variants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: { staggerChildren: 0.15 },
-  },
-};
-
-const item: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5 },
-  },
-};
-
-/* ---------------- Component ---------------- */
+/* ────────────── Component ────────────── */
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#0a0a0a] overflow-hidden">
-
-      {/* Glow */}
-      <div className="absolute inset-0 pointer-events-none">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-150 h-75 bg-[#F48120]/10 blur-[120px] rounded-full"
-        />
-      </div>
-
+    <footer className="bg-[#0a0a0a]">
       <div className="border-t border-white/10" />
 
-      {/* Main */}
-      <motion.div
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        className="relative z-10 mx-auto max-w-7xl px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10"
-      >
-        {/* Brand */}
-        <motion.div variants={item} className="lg:col-span-2">
-          <Image
-            src="/images/logos/logo-light.png"
-            alt="Trackepay"
-            width={140}
-            height={40}
-            className="mb-4"
-          />
-          <p className="text-white/50 text-sm max-w-sm">
-            We build mission-critical software for governments and enterprises.
-          </p>
+      {/* Main grid */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+          {/* Brand — spans 4 cols */}
+          <div className="lg:col-span-4">
+            <Image
+              src="/images/logos/logo-light.png"
+              alt="Trackepay"
+              width={140}
+              height={40}
+              className="mb-5"
+            />
+            <p className="text-white/45 text-sm leading-relaxed max-w-sm mb-6">
+              Enterprise-grade technology trusted by government agencies and
+              150+ businesses across India. Building mission-critical software
+              since 2020.
+            </p>
 
-          {/* Social */}
-          <div className="flex gap-3 mt-6">
-            {socialLinks.map((social) => (
-              <motion.a
-                key={social.label}
-                href={social.href}
-                target="_blank"
-                whileHover={{ scale: 1.15 }}
-                whileTap={{ scale: 0.9 }}
-                className="h-9 w-9 flex items-center justify-center rounded-full bg-white/5 hover:bg-[#F48120]"
+            {/* Contact details */}
+            <div className="space-y-3 mb-6">
+              <a
+                href="mailto:info@trackepay.in"
+                className="flex items-center gap-2.5 text-sm text-white/40 hover:text-white/70 transition-colors"
               >
-                <social.Icon className="h-4 w-4 text-white" />
-              </motion.a>
-            ))}
-          </div>
-        </motion.div>
+                <Mail className="h-4 w-4 shrink-0" />
+                info@trackepay.in
+              </a>
+              <a
+                href="tel:+917978611887"
+                className="flex items-center gap-2.5 text-sm text-white/40 hover:text-white/70 transition-colors"
+              >
+                <Phone className="h-4 w-4 shrink-0" />
+                +91 797 861 1887
+              </a>
+              <div className="flex items-start gap-2.5 text-sm text-white/40">
+                <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
+                <span>Bhubaneswar, Odisha, India</span>
+              </div>
+            </div>
 
-        {/* Links */}
-        {[
-          { title: "Solutions", links: solutionsLinks },
-          { title: "Company", links: companyLinks },
-          { title: "Products", links: productLinks },
-        ].map((section) => (
-          <motion.div key={section.title} variants={item}>
-            <h4 className="text-white mb-4">{section.title}</h4>
-            <ul className="space-y-2">
-              {section.links.map((link) => (
+            {/* Social */}
+            <div className="flex gap-2.5">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="h-9 w-9 flex items-center justify-center rounded-lg bg-white/5 text-white/50 hover:bg-white/10 hover:text-white transition-all duration-200"
+                >
+                  <social.Icon className="h-4 w-4" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Solutions */}
+          <div className="lg:col-span-3">
+            <h4 className="text-[11px] font-semibold uppercase tracking-[0.1em] text-white/30 mb-5">
+              Solutions
+            </h4>
+            <ul className="space-y-2.5">
+              {solutionsLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-white/50 hover:text-white text-sm">
+                  <Link
+                    href={link.href}
+                    className="text-sm text-white/50 hover:text-white transition-colors duration-150"
+                  >
                     {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
-          </motion.div>
-        ))}
-      </motion.div>
+          </div>
 
-      {/* Bottom */}
-      <div className="border-t border-white/10 text-center py-6 text-white/40 text-xs">
-        © 2025 Trackepay Fintech (OPC) Pvt Ltd
+          {/* Company */}
+          <div className="lg:col-span-2">
+            <h4 className="text-[11px] font-semibold uppercase tracking-[0.1em] text-white/30 mb-5">
+              Company
+            </h4>
+            <ul className="space-y-2.5">
+              {companyLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-white/50 hover:text-white transition-colors duration-150"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Products */}
+          <div className="lg:col-span-3">
+            <h4 className="text-[11px] font-semibold uppercase tracking-[0.1em] text-white/30 mb-5">
+              Products
+            </h4>
+            <ul className="space-y-2.5">
+              {productLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-white/50 hover:text-white transition-colors duration-150"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-white/[0.06]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-white/30 text-xs">
+            &copy; {new Date().getFullYear()} Trackepay Fintech (OPC) Pvt Ltd. All rights reserved.
+          </p>
+          <div className="flex items-center gap-6">
+            <Link
+              href="/privacy-policy"
+              className="text-xs text-white/30 hover:text-white/60 transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms-conditions"
+              className="text-xs text-white/30 hover:text-white/60 transition-colors"
+            >
+              Terms & Conditions
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

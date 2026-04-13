@@ -234,6 +234,46 @@ body {
     linear-gradient(90deg, rgba(255 255 255 / 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
 }
+/* ─── Navbar ─── */
+
+.nav-link-base {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #475569;
+  transition: color 0.15s;
+}
+
+.nav-link-base:hover {
+  color: #0f172a;
+}
+
+/* ─── Mobile Drawer ─── */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInDrawer {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 200ms ease-out forwards;
+}
+
+.animate-slide-in-drawer {
+  animation: slideInDrawer 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ─── Iframes ─── */
+
 iframe {
   scrollbar-width: none; /* Firefox */
 }
