@@ -132,32 +132,66 @@ export default function TechnologyPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#110F33] via-[#15133d] to-[#1a1850] py-20 lg:py-28">
+      <section className="relative overflow-hidden py-20 lg:py-28">
+
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/wp/Gemini_Generated_Image_vunl8rvunl8rvunl.png" // 👉 put your image in public/images
+            alt="background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Dark Gradient Overlay (IMPORTANT for readability) */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#110F33]/90 via-[#15133d]/85 to-[#1a1850]/90" />
+
+        {/* Grid pattern */}
         <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0 opacity-[0.05]"
           style={{
             backgroundImage:
               "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
+
+        {/* Content */}
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-2 text-sm text-slate-400 mb-10">
-            <Link href="/" className="hover:text-white transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-slate-300">Technology</span>
-          </nav>
-          <div className="max-w-4xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
-              Technology
-            </h1>
-            <p className="text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
-              Smart digital solutions, innovative IT strategies, and automation
-              tools that drive efficiency, growth, and scalability for modern
-              businesses.
-            </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+            {/* Left Side Image */}
+            <div>
+              <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6">
+                <Link href="/" className="hover:text-white transition-colors">
+                  Home
+                </Link>
+                <ChevronRight className="w-3.5 h-3.5" />
+                <span className="text-slate-300">Technology</span>
+              </nav>
+
+              <div className="max-w-4xl">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                  Technology
+                </h1>
+
+                <p className="text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
+                  Smart digital solutions, innovative IT strategies, and automation
+                  tools that drive efficiency, growth, and scalability for modern
+                  businesses.
+                </p>
+              </div>
+            </div>
+
+            <div className="w-full">
+              <img
+                src="/images/wp/Gemini_Generated_Image_ebx7huebx7huebx7.png" // put your image in public folder
+                alt="Technology"
+                className="w-full h-auto rounded-2xl shadow-lg object-cover"
+              />
+            </div>
+
           </div>
         </div>
       </section>

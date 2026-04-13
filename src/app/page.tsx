@@ -190,7 +190,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════ WHO WE SERVE ═══════════ */}
+      {/* ═══════════ 3. WHO WE SERVE ═══════════ */}
       <section className="py-24 lg:py-32 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -380,7 +380,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════ HOW WE WORK ═══════════ */}
+      {/* ═══════════ 5. HOW WE WORK ═══════════ */}
       <section className="py-24 lg:py-32 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -423,8 +423,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════ TESTIMONIALS ═══════════ */}
-      <section className="py-24 lg:py-32 bg-slate-50/80">
+      {/* ═══════════ 6. TESTIMONIALS ═══════════ */}
+      <section className="py-24 lg:py-32 bg-slate-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <SectionLabel>Testimonials</SectionLabel>
@@ -468,7 +468,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════ CAPABILITIES ═══════════ */}
+      {/* ═══════════ 7. CAPABILITIES ═══════════ */}
       <section className="py-24 lg:py-32 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">

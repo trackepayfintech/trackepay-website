@@ -236,7 +236,7 @@ export default function GovernmentPoliceSolutionsPage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-[#110F33] via-[#15133d] to-[#1a1850] py-20 lg:py-28">
         {/* Grid pattern overlay */}
         <div
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 opacity-5 pointer-events-none"
           style={{
             backgroundImage:
               "linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)",
@@ -244,25 +244,28 @@ export default function GovernmentPoliceSolutionsPage() {
           }}
         />
         {/* Radial glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#F48120]/15 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#F48120]/15 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-slate-400 mb-8">
+
             <Link href="/" className="hover:text-white transition-colors">
               Home
             </Link>
+
             <ChevronRight className="w-3.5 h-3.5" />
-            <Link
-              href="/services"
-              className="hover:text-white transition-colors"
-            >
+
+            <Link href="/services" className="hover:text-white transition-colors">
               Products
             </Link>
+
             <ChevronRight className="w-3.5 h-3.5" />
+
             <span className="text-orange-400">
               Government &amp; Police Solutions
             </span>
+
           </nav>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
