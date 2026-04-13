@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# keystone (local only)
+/keystone-app/
+
 # claude
 CLAUDE.md
 AGENTS.md
