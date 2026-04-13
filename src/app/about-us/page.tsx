@@ -63,7 +63,7 @@ const teamMembers = [
     role: "CTO",
     desc: "Visionary leader with 10+ years in B2B marketing. Drives strategic growth initiatives and oversees client success across all verticals.",
     initials: "BP",
-    photo: "/images/wp/IMG_3541.jpeg",
+    photo: "/images/wp/p1.png",
     linkedin: "https://linkedin.com/in/biswajit-pradhan",
   },
   {
@@ -71,15 +71,15 @@ const teamMembers = [
     role: "Business Analytics",
     desc: "Data-driven strategist specializing in market research, performance analytics, and ROI optimization for maximum campaign effectiveness.",
     initials: "BS",
-    photo: "/images/wp/Untitled-design-11.png",
+    photo: "/images/wp/p3.png",
     linkedin: "https://www.linkedin.com/in/biswajit-s-ahoo/",
   },
   {
-    name: "Ashish Ku Puntia",
+    name: "Ashish Kumar Puntia",
     role: "Software Developer",
     desc: "Focused on building scalable and efficient applications with modern web technologies and clean architecture.",
     initials: "AP",
-    photo: "/images/wp/WhatsApp Image 2026-04-04 at 4.20.36 PM.jpeg",
+    photo: "/images/wp/p2.png",
     linkedin: "https://www.linkedin.com/in/ashish-kumar-puntia/",
   },
 
@@ -88,8 +88,16 @@ const teamMembers = [
     role: "HR Generalist",
     desc: "Focused on people-first strategies, enhancing workplace productivity, boosting employee engagement and supporting company vision.",
     initials: "AD",
-    photo: "/images/wp/Untitled-design-37.png",
+    photo: "/images/wp/WhatsApp Image 2026-04-13 at 3.19.18 PM.jpeg",
     linkedin: "https://www.linkedin.com/in/abhilipsa-das-1a962a125/",
+  },
+  {
+    name: "Sonalisha Pramanik ",
+    role: "Operations Executive- Admin and Social Media",
+    desc: "Operations Executive managing admin processes and social media to drive efficiency and brand growth.",
+    initials: "SP",
+    photo: "/images/wp/Sp.jpeg",
+    linkedin: "https://www.linkedin.com/in/sonalisha-pramanik/",
   },
 ];
 
@@ -268,9 +276,12 @@ export default function AboutUsPage() {
                   {/* Avatar */}
                   <div className="absolute left-1/2 -bottom-12 -translate-x-1/2">
                     <div className="w-24 h-24 rounded-full border-4 border-white bg-slate-100 shadow-md overflow-hidden flex items-center justify-center">
-                      <span className="text-xl font-bold text-slate-400">
-                        {member.initials}
-                      </span>
+                     
+                      <img
+                        src={member.photo}
+                        
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
