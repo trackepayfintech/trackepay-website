@@ -29,7 +29,7 @@ const teamMembers = [
     name: "Biswajit Sahoo",
     role: "Business Analytics",
     initials: "BS",
-    photo: "/images/wp/p3.png",
+    photo: "/images/wp/Bs.jpeg",
     quote:
       "We believe that every business, regardless of size, should have access to affordable and scalable software solutions. Data-driven decisions are the backbone of sustainable growth.",
   },
@@ -37,7 +37,7 @@ const teamMembers = [
     name: "Ashish Kumar Puntia",
     role: "Senior Developer",
     initials: "AP",
-    photo: "/images/wp/p2.png",
+    photo: "/images/wp/Sk.png",
     quote:
       "We know that no two businesses are the same, and that's why we offer customized software solutions tailored to your specific needs. Every line of code we write is purposeful.",
   },

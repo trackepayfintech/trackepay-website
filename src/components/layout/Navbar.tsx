@@ -58,7 +58,7 @@ const aboutLinks = [
 const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Technology", href: "/technology" },
-  { label: "Careers", href: "/careers" },
+ 
   { label: "Blog", href: "/blog" },
 ];
 
@@ -237,7 +237,7 @@ export default function Navbar() {
               href="/contact"
               className="hidden lg:inline-flex items-center gap-2 bg-slate-900 text-white text-[13px] font-semibold tracking-wide rounded-lg px-5 py-2.5 transition-all duration-200 hover:bg-slate-800 active:scale-[0.98]"
             >
-              Contact Us
+             Get in touch
               <ArrowRight className="h-3.5 w-3.5" />
             </Link>
             <button

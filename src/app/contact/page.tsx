@@ -130,43 +130,55 @@ export default function ContactPage() {
               Our Contact Details
             </h2>
           </div>
-          <div className="grid sm:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mx-auto mb-5">
-                <Phone className="w-6 h-6 text-orange-400" />
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+
+              <div className="grid sm:grid-cols-3 gap-4 text-center">
+
+                {/* Phone */}
+                <div>
+                  <div className="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
+                    <Phone className="w-6 h-6 text-orange-400" />
+                  </div>
+                  <h3 className="text-white font-semibold text-lg mb-2">Phone</h3>
+                  <Link
+                    href="tel:+918658445706"
+                    className="text-slate-300 hover:text-orange-400 transition-colors text-sm"
+                  >
+                    +91 86584 45706
+                  </Link>
+                </div>
+
+                {/* Email */}
+                <div>
+                  <div className="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
+                    <Mail className="w-6 h-6 text-orange-400" />
+                  </div>
+                  <h3 className="text-white font-semibold text-lg mb-2">Email</h3>
+                  <Link
+                    href="mailto:info@trackepay.in"
+                    className="text-slate-300 hover:text-orange-400 transition-colors text-sm"
+                  >
+                    info@trackepay.in
+                  </Link>
+                </div>
+
+                {/* Address */}
+                <div>
+                  <div className="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mx-auto mb-4">
+                    <MapPin className="w-6 h-6 text-orange-400" />
+                  </div>
+                  <h3 className="text-white font-semibold text-lg mb-2">Address</h3>
+                  <p className="text-slate-300 text-sm leading-relaxed">
+                    327/2101, Chandravihar,
+                    <br />
+                    Near Omfed Square, Chandrasekharpur,
+                    <br />
+                    Bhubaneswar
+                  </p>
+                </div>
+
               </div>
-              <h3 className="text-white font-semibold text-lg mb-3">Phone</h3>
-              <Link
-                href="tel:+918658445706"
-                className="text-slate-300 hover:text-orange-400 transition-colors text-sm"
-              >
-                +91 86584 45706
-              </Link>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mx-auto mb-5">
-                <Mail className="w-6 h-6 text-orange-400" />
-              </div>
-              <h3 className="text-white font-semibold text-lg mb-3">Email</h3>
-              <Link
-                href="mailto:info@trackepay.in"
-                className="text-slate-300 hover:text-orange-400 transition-colors text-sm"
-              >
-                info@trackepay.in
-              </Link>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/10 hover:bg-white/10 transition-all duration-300">
-              <div className="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mx-auto mb-5">
-                <MapPin className="w-6 h-6 text-orange-400" />
-              </div>
-              <h3 className="text-white font-semibold text-lg mb-3">Address</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
-                327/2101, Chandravihar,
-                <br />
-                Near Omfed Square, Chandrasekharpur,
-                <br />
-                Bhubaneswar
-              </p>
             </div>
           </div>
 

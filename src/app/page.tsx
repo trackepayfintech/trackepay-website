@@ -210,13 +210,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {/* Government */}
             <div className="group bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm hover:shadow-md hover:border-slate-300/60 transition-all duration-300">
-              <div className="h-1 bg-emerald-500" />
+              <div className="h-1 bg-slate-900" />
               <div className="p-8 lg:p-10">
                 <div className="flex items-start justify-between mb-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-200 text-slate-900">
                     <Shield className="h-6 w-6" />
                   </div>
-                  <span className="inline-flex items-center bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-xs font-medium">
+                  <span className="inline-flex items-center bg-slate-200 text-slate-900 px-3 py-1 rounded-full text-xs font-medium">
                     Built for India
                   </span>
                 </div>
@@ -242,14 +242,14 @@ export default function Home() {
                       key={item}
                       className="flex items-center gap-2.5 text-[15px] text-slate-600"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-emerald-500 shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-slate-900 shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href="/government-police-solutions"
-                  className="inline-flex items-center text-sm font-semibold text-emerald-600 hover:text-emerald-700 transition-colors group/link"
+                  className="inline-flex items-center text-sm font-semibold text-slate-900 hover:text-slate-700 transition-colors group/link"
                 >
                   Explore Govt Solutions
                   <ArrowRight className="ml-1.5 h-4 w-4 group-hover/link:translate-x-0.5 transition-transform" />
@@ -308,13 +308,13 @@ export default function Home() {
 
             {/* Global IT */}
             <div className="group bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-sm hover:shadow-md hover:border-slate-300/60 transition-all duration-300">
-              <div className="h-1 bg-blue-500" />
+              <div className="h-1 bg-slate-900" />
               <div className="p-8 lg:p-10">
                 <div className="flex items-start justify-between mb-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-200 text-slate-900">
                     <Globe className="h-6 w-6" />
                   </div>
-                  <span className="inline-flex items-center bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">
+                  <span className="inline-flex items-center bg-slate-200 text-slate-900 px-3 py-1 rounded-full text-xs font-medium">
                     Global Delivery
                   </span>
                 </div>
@@ -340,14 +340,14 @@ export default function Home() {
                       key={item}
                       className="flex items-center gap-2.5 text-[15px] text-slate-600"
                     >
-                      <CheckCircle2 className="h-4 w-4 text-blue-500 shrink-0" />
+                      <CheckCircle2 className="h-4 w-4 text-slate-900 shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href="/technology"
-                  className="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors group/link"
+                  className="inline-flex items-center text-sm font-semibold text-slate-900 hover:text-slate-700 transition-colors group/link"
                 >
                   Our Services
                   <ArrowRight className="ml-1.5 h-4 w-4 group-hover/link:translate-x-0.5 transition-transform" />

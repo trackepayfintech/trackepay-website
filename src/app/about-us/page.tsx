@@ -99,29 +99,48 @@ const teamMembers = [
     photo: "/images/wp/Sp.jpeg",
     linkedin: "https://www.linkedin.com/in/sonalisha-pramanik/",
   },
+   {
+    name: "Jyatirmoy Dey ",
+    role: "Business Analytics",
+    desc: "Data-driven strategist specializing in market research, performance analytics, and ROI optimization for maximum campaign effectiveness.",
+    initials: "JD",
+    photo: "/images/wp/jyatirmoy_pic 2.jpeg",
+    linkedin: "https://www.linkedin.com/in/jyatirmoy10/",
+  },
+   {
+    name: "Sidhant Sankar Das ",
+    role: "Associate Web Developer",
+    desc: "Supports the development of responsive web applications, fixes bugs, and collaborates with the team to deliver high-quality user experiences.",
+    initials: "SD",
+    photo: "/images/wp/Sd.png",
+    linkedin: "https://www.linkedin.com/in/sidhant-sankar-das-3412a7299/",
+  },
+   {
+    name: "Chinmaya Swain ",
+    role: "Associate Web Developer",
+    desc: "Supports the development of responsive web applications, fixes bugs, and collaborates with the team to deliver high-quality user experiences.",
+    initials: "CS",
+    photo: "/images/wp/WhatsApp Image 2026-04-14 at 11.39.10 AM.jpeg",
+    linkedin: "https://www.linkedin.com/in/chinmaya-swain-75a81a292/",
+  },
+   {
+    name: "Subham Sidhartha Sahoo ",
+    role: "Associate Web Developer",
+    desc: "Supports the development of responsive web applications, fixes bugs, and collaborates with the team to deliver high-quality user experiences.",
+    initials: "SS",
+    photo: "/images/wp/Su.png",
+    linkedin: "https://www.linkedin.com/in/subham-sidhartha-sahoo-87a2a9372/",
+  },
+   
 ];
 
 const milestones = [
   {
-    year: "2021",
-    title: "Founded with Vision",
+    year: "2025",
+    title: "Sustainability & Community",
     description:
-      "Trackepay was established with a mission to innovate and deliver smart digital solutions for modern businesses.",
-    image: "/images/wp/image.png",
-  },
-  {
-    year: "2022",
-    title: "First Product Launch",
-    description:
-      "Launched our first product with strong industry adoption, gaining early traction and positive client feedback.",
-    image: "/images/wp/Gemini_Generated_Image_1re8lk1re8lk1re8.png",
-  },
-  {
-    year: "2023",
-    title: "Market Expansion",
-    description:
-      "Expanded into new markets and formed strategic partnerships to accelerate growth and broaden service offerings.",
-    image: "/images/wp/Gemini_Generated_Image_au1igfau1igfau1i.png",
+      "Shifted focus toward sustainability initiatives and meaningful community engagement through technology.",
+    image: "/images/wp/Gemini_Generated_Image_y5o7jly5o7jly5o7.png",
   },
   {
     year: "2024",
@@ -131,11 +150,25 @@ const milestones = [
     image: "/images/wp/Gemini_Generated_Image_co5lasco5lasco5l.png",
   },
   {
-    year: "2025",
-    title: "Sustainability & Community",
+    year: "2023",
+    title: "Market Expansion",
     description:
-      "Shifted focus toward sustainability initiatives and meaningful community engagement through technology.",
-    image: "/images/wp/Gemini_Generated_Image_y5o7jly5o7jly5o7.png",
+      "Expanded into new markets and formed strategic partnerships to accelerate growth and broaden service offerings.",
+    image: "/images/wp/Gemini_Generated_Image_au1igfau1igfau1i.png",
+  },
+  {
+    year: "2022",
+    title: "First Product Launch",
+    description:
+      "Launched our first product with strong industry adoption, gaining early traction and positive client feedback.",
+    image: "/images/wp/Gemini_Generated_Image_1re8lk1re8lk1re8.png",
+  },
+  {
+    year: "2021",
+    title: "Founded with Vision",
+    description:
+      "Trackepay was established with a mission to innovate and deliver smart digital solutions for modern businesses.",
+    image: "/images/wp/image.png",
   },
 ];
 
@@ -262,7 +295,7 @@ export default function AboutUsPage() {
           </div>
 
           {/* Cards */}
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {teamMembers.map((member) => (
               <div
                 key={member.name}
@@ -279,9 +312,10 @@ export default function AboutUsPage() {
                      
                       <img
                         src={member.photo}
-                        
-                        className="w-full h-full object-cover"
+                        alt={member.initials}
+                        className="w-full h-full object-cover "
                       />
+                      
                     </div>
                   </div>
                 </div>
