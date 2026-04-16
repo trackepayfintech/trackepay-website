@@ -171,7 +171,7 @@ export default function ServicesPage() {
             </div>
             <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/images/wp/corporate-services-hero.webp"
+                src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-services-hero.webp"
                 alt="Trackepay digital services"
                 fill
                 className="object-cover"

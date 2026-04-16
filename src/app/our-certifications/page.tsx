@@ -13,25 +13,25 @@ const certifications = [
     title: "ISO 9001:2015 Certification",
     description:
       "Quality Management System certification demonstrating our commitment to consistent quality.",
-    image: "/images/wp/ISO 9001_page-0001.jpg",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/ISO-90012015-Certification.webp",
   },
   {
     title: "ISO 27001:2013 Certification",
     description:
       "Information Security Management certification ensuring strong data protection.",
-    image: "/images/wp/ISO 27001-2013_page-0001.jpg",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/ISO-270012013-Certification.webp",
   },
   {
     title: "Startup India Recognition",
     description:
       "Official recognition under Startup India initiative validating innovation.",
-    image: "/images/wp/startup certificate.jpg",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Startup-India-Recognition.webp",
   },
   {
     title: "Startup Odisha Recognition",
     description:
       "Official recognition under Startup Odisha initiative validating innovation.",
-    image: "/images/wp/startup odisha certificate_page-0001.jpg",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Startup-Odisha-Recognition.webp",
   },
 ];
 

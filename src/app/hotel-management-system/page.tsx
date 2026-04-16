@@ -27,7 +27,7 @@ export default function RestaurantManagementSystemPage() {
       breadcrumbLabel="Restaurant Management System"
       contentTitle="Restaurant Management System"
       contentDescription="Our Restaurant Management System simplifies your daily operations with intuitive tools for order processing, table management, kitchen coordination, and business analytics. Whether you run a single outlet or a chain, our solution scales with your needs."
-      heroImageSrc="/images/wp/Gemini_Generated_Image_x4ks4gx4ks4gx4ks.png"
+      heroImageSrc="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/hotel-manegement.webp"
       featureChecklist={[
         "Order & Billing Automation",
         "Table Reservation System",

@@ -21,7 +21,7 @@ export default function DigitalMarketingPage() {
     <ServicePageTemplate
       heroTitle="Digital Marketing Services"
       heroSubtitle="Grow your online presence, reach your target audience, and drive measurable results with our comprehensive digital marketing strategies tailored to your business goals."
-      heroImageSrc="/images/wp/Gemini_Generated_Image_d1idwwd1idwwd1id.png"
+      heroImageSrc="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/digital-marketing.webp"
       breadcrumbLabel="Digital Marketing"
       introparagraphs={[
         "In the digital age, effective marketing is the key to reaching your customers where they are. Our digital marketing team combines creativity with data-driven strategies to deliver campaigns that convert.",

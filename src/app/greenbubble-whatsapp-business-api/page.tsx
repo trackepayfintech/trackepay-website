@@ -107,7 +107,7 @@ export default function GreenBubblePage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
               <Image
-                src="/images/wp/pexels-rdne-6129105-scaled.jpg"
+                src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/green-bubble-img.webp"
                 alt="GreenBubble WhatsApp Business API platform"
                 fill
                 className="object-cover"

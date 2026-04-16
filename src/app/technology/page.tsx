@@ -137,7 +137,7 @@ export default function TechnologyPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/images/wp/Gemini_Generated_Image_vunl8rvunl8rvunl.png" // 👉 put your image in public/images
+            src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/technology.webp" // 👉 put your image in public/images
             alt="background"
             className="w-full h-full object-cover"
           />
@@ -186,7 +186,7 @@ export default function TechnologyPage() {
 
             <div className="w-full">
               <img
-                src="/images/wp/Gemini_Generated_Image_ebx7huebx7huebx7.png" // put your image in public folder
+                src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/digital-technology.webp" // put your image in public folder
                 alt="Technology"
                 className="w-full h-auto rounded-2xl shadow-lg object-cover"
               />
@@ -287,7 +287,7 @@ export default function TechnologyPage() {
           </div>
           <div className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/images/wp/Gemini_Generated_Image_oj4tu1oj4tu1oj4t.png"
+              src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Build.webp"
               alt="Trackepay trusted hosting and technology platform"
               width={1024}
               height={600}

@@ -10,7 +10,7 @@ const projects = [
     category: "Govt & Law Enforcement",
     title: "Sarai 2.0: Real-Time Guest Monitoring System for Commissionerate Police",
     description: "A digital ecosystem for hotel compliance and public safety, enabling real-time alerts and seamless law enforcement collaboration.",
-    image: "/images/wp/Screenshot 2026-04-14 183515.png", // Ensure path is correct
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/product-for-govt.webp", // Ensure path is correct
     tags: ["SaaS", "Public Safety", "Real-time Dashboard"],
   },
   
@@ -19,7 +19,7 @@ const projects = [
     category: "Digital Solutions",
     title: "The Trackepay Product Suite: CRM & WhatsApp Automation",
     description: "A dual-power ecosystem featuring Trackepay CRM for sales management and GreenBubble for Meta-powered communication.",
-    image: "/images/wp/Screenshot 2026-04-14 183606.png", 
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/crm-product.webp", 
     tags: ["CRM", "WhatsApp API", "SaaS", "Automation"],
   },
   
@@ -28,7 +28,7 @@ const projects = [
     category: "Developer Tools",
     title: "Walytic: WhatsApp Web API Infrastructure for Scale",
     description: "A comprehensive API platform for account connection, message automation, and bulk campaigns without per-message fees.",
-    image: "/images/wp/Screenshot 2026-04-14 190157.png", 
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/walytic-product.webp", 
     tags: ["WhatsApp API", "Automation", "SaaS Infrastructure"],
   },
 ];

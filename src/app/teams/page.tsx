@@ -13,7 +13,7 @@ const teamMembers = [
     name: "Diptendu Shekhar Nayak",
     role: "Director",
     initials: "DN",
-    photo: "/images/wp/ph3.png",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-1.webp",
     quote:
       "At Trackepay, we recognize the distinct challenges faced by small and medium fintech businesses. Our goal is to provide innovative, accessible solutions that empower these organizations to compete and thrive in today's digital economy.",
   },
@@ -21,7 +21,7 @@ const teamMembers = [
     name: "Biswajit Pradhan",
     role: "Co-Founder, CTO",
     initials: "BP",
-    photo: "/images/wp/p1.png",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-2.webp",
     quote:
       "Our software streamlines all aspects of your business operations, from accounting and payroll to invoicing and payments. We build tools that simplify complexity and let you focus on growth.",
   },
@@ -29,7 +29,7 @@ const teamMembers = [
     name: "Biswajit Sahoo",
     role: "Business Analytics",
     initials: "BS",
-    photo: "/images/wp/Bs.jpeg",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-4.webp",
     quote:
       "We believe that every business, regardless of size, should have access to affordable and scalable software solutions. Data-driven decisions are the backbone of sustainable growth.",
   },
@@ -37,7 +37,7 @@ const teamMembers = [
     name: "Ashish Kumar Puntia",
     role: "Senior Developer",
     initials: "AP",
-    photo: "/images/wp/Sk.png",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-6.webp",
     quote:
       "We know that no two businesses are the same, and that's why we offer customized software solutions tailored to your specific needs. Every line of code we write is purposeful.",
   },

@@ -156,7 +156,7 @@ export default function WebDesigningDevelopmentPage() {
             <span className="text-slate-300">Web Designing & Development</span>
           </nav>
           <div className="max-w-4xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-orange-400 mb-6 leading-tight tracking-tight">
               Web Designing & Development
             </h1>
             <p className="text-slate-300 text-lg sm:text-xl leading-relaxed max-w-3xl">

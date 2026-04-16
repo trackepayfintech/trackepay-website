@@ -11,7 +11,7 @@ const caseStudies: any = {
       "How Sarai 2.0 helps Commissionerate Police, Bhubaneswar & Cuttack, monitor hotel guests digitally and get instant alerts for suspects.",
     client: "Commissionerate Police, Bhubaneswar & Cuttack",
     industry: "Law Enforcement",
-    image: "/images/wp/Screenshot 2026-04-14 183515.png",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/product-for-govt.webp",
 
     services: ["Real-time Dashboards", "Automated Flagging", "Digital Registration"],
 
@@ -44,7 +44,7 @@ const caseStudies: any = {
     description: "How Trackepay CRM and GreenBubble work together to automate lead management and scale customer engagement.",
     client: "Startups & Growth-Stage Businesses",
     industry: "SaaS / MarTech",
-    image: "/images/wp/Screenshot 2026-04-14 183606.png",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/crm-product.webp",
     services: ["CRM Development", "WhatsApp Cloud API", "Sales Automation"],
     
     // Add these arrays back in to fix the .map() error
@@ -77,7 +77,7 @@ const caseStudies: any = {
     description: "Built for SaaS tools and agencies, Walytic provides a robust platform to automate workflows and run bulk campaigns via WhatsApp Web API.",
     client: "Agencies & Software Developers",
     industry: "SaaS / Automation",
-    image: "/images/wp/Screenshot 2026-04-14 190157.png",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/walytic-product.webp",
     services: ["WhatsApp Web API", "Workflow Automation", "Bulk Messaging"],
     
     challenge: [

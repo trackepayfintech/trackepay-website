@@ -17,7 +17,7 @@ export default function MobileAppPage() {
     <ServicePageTemplate
       heroTitle="Mobile Application Design & Development"
       heroSubtitle="Welcome to TrackePay, where innovation and technology meet! We create high-performance, user-friendly mobile applications that deliver exceptional experiences on iOS and Android."
-      heroImageSrc="/images/wp/Mobile-Application-Design.jpg"
+      heroImageSrc="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Mobile-Application-Design.webp"
       breadcrumbLabel="Mobile Apps"
       introparagraphs={[
         "Welcome to TrackePay, where innovation and technology meet! Our mobile app development team combines creative design with technical excellence to build apps that users love.",

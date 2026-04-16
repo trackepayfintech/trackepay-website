@@ -21,7 +21,7 @@ export default function DataAnalyticsPage() {
     <ServicePageTemplate
       heroTitle="Data Analytics Services"
       heroSubtitle="We specialize in harnessing the full potential of your data to transform raw numbers into actionable insights that drive smarter decisions, optimize performance, and fuel business growth."
-      heroImageSrc="/images/wp/Gemini_Generated_Image_9s2zsb9s2zsb9s2z.png"
+      heroImageSrc="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/data-analytics-services.webp"
       breadcrumbLabel="Data Analytics"
       introparagraphs={[
         "We specialize in harnessing the full potential of your data. In today's data-driven world, having the right analytics in place can be the difference between guessing and knowing.",

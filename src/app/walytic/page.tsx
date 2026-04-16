@@ -10,6 +10,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import CTABanner from "@/components/shared/CTABanner";
 
 export const metadata: Metadata = {
@@ -67,7 +68,7 @@ export default function WalyticPage() {
           <div className="absolute bottom-0 left-0 w-72 h-72 bg-orange-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid g">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-slate-400 mb-10">
             <Link href="/" className="hover:text-white transition-colors">
@@ -76,7 +77,7 @@ export default function WalyticPage() {
             <ChevronRight className="w-3.5 h-3.5" />
             <span className="text-slate-300 font-medium">Walytic</span>
           </nav>
-
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-3xl">
             <span className="inline-block bg-orange-500/10 text-orange-400 px-3 py-1 rounded-full text-sm font-medium mb-6 border border-orange-500/20">
               WhatsApp API System
@@ -90,6 +91,16 @@ export default function WalyticPage() {
               automation, webhook integrations, and number verification — built
               for businesses that need reliability and performance.
             </p>
+          </div>
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+            <Image
+              src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/walytic-product-2.webp"
+              alt="Walytic WhatsApp API platform"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           </div>
         </div>
       </section>

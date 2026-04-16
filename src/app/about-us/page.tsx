@@ -63,7 +63,7 @@ const teamMembers = [
     role: "CTO",
     desc: "Visionary leader with 10+ years in B2B marketing. Drives strategic growth initiatives and oversees client success across all verticals.",
     initials: "BP",
-    photo: "/images/wp/p1.png",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-2.webp",
     linkedin: "https://linkedin.com/in/biswajit-pradhan",
   },
   {
@@ -71,7 +71,7 @@ const teamMembers = [
     role: "Business Analytics",
     desc: "Data-driven strategist specializing in market research, performance analytics, and ROI optimization for maximum campaign effectiveness.",
     initials: "BS",
-    photo: "/images/wp/p3.png",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-3.webp",
     linkedin: "https://www.linkedin.com/in/biswajit-s-ahoo/",
   },
   {
@@ -79,7 +79,7 @@ const teamMembers = [
     role: "Software Developer",
     desc: "Focused on building scalable and efficient applications with modern web technologies and clean architecture.",
     initials: "AP",
-    photo: "/images/wp/p2.png",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-6.webp",
     linkedin: "https://www.linkedin.com/in/ashish-kumar-puntia/",
   },
 
@@ -88,7 +88,7 @@ const teamMembers = [
     role: "HR Generalist",
     desc: "Focused on people-first strategies, enhancing workplace productivity, boosting employee engagement and supporting company vision.",
     initials: "AD",
-    photo: "/images/wp/WhatsApp Image 2026-04-13 at 3.19.18 PM.jpeg",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-5.webp",
     linkedin: "https://www.linkedin.com/in/abhilipsa-das-1a962a125/",
   },
   {
@@ -96,7 +96,7 @@ const teamMembers = [
     role: "Operations Executive- Admin and Social Media",
     desc: "Operations Executive managing admin processes and social media to drive efficiency and brand growth.",
     initials: "SP",
-    photo: "/images/wp/Sp.jpeg",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-7.webp",
     linkedin: "https://www.linkedin.com/in/sonalisha-pramanik/",
   },
    {
@@ -104,7 +104,7 @@ const teamMembers = [
     role: "Business Analytics",
     desc: "Data-driven strategist specializing in market research, performance analytics, and ROI optimization for maximum campaign effectiveness.",
     initials: "JD",
-    photo: "/images/wp/jyatirmoy_pic 2.jpeg",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-8.webp",
     linkedin: "https://www.linkedin.com/in/jyatirmoy10/",
   },
    {
@@ -112,7 +112,7 @@ const teamMembers = [
     role: "Associate Web Developer",
     desc: "Supports the development of responsive web applications, fixes bugs, and collaborates with the team to deliver high-quality user experiences.",
     initials: "SD",
-    photo: "/images/wp/Sd.png",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-9.webp",
     linkedin: "https://www.linkedin.com/in/sidhant-sankar-das-3412a7299/",
   },
    {
@@ -120,7 +120,7 @@ const teamMembers = [
     role: "Associate Web Developer",
     desc: "Supports the development of responsive web applications, fixes bugs, and collaborates with the team to deliver high-quality user experiences.",
     initials: "CS",
-    photo: "/images/wp/WhatsApp Image 2026-04-14 at 11.39.10 AM.jpeg",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-11.webp",
     linkedin: "https://www.linkedin.com/in/chinmaya-swain-75a81a292/",
   },
    {
@@ -128,7 +128,7 @@ const teamMembers = [
     role: "Associate Web Developer",
     desc: "Supports the development of responsive web applications, fixes bugs, and collaborates with the team to deliver high-quality user experiences.",
     initials: "SS",
-    photo: "/images/wp/Su.png",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-10.webp",
     linkedin: "https://www.linkedin.com/in/subham-sidhartha-sahoo-87a2a9372/",
   },
    
@@ -140,35 +140,35 @@ const milestones = [
     title: "Sustainability & Community",
     description:
       "Shifted focus toward sustainability initiatives and meaningful community engagement through technology.",
-    image: "/images/wp/Gemini_Generated_Image_y5o7jly5o7jly5o7.png",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-timeline-1.webp",
   },
   {
     year: "2024",
     title: "Remote Work Integration",
     description:
       "Embraced a remote-first culture, enabling our team to collaborate seamlessly across geographies.",
-    image: "/images/wp/Gemini_Generated_Image_co5lasco5lasco5l.png",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-timeline-2.webp",
   },
   {
     year: "2023",
     title: "Market Expansion",
     description:
       "Expanded into new markets and formed strategic partnerships to accelerate growth and broaden service offerings.",
-    image: "/images/wp/Gemini_Generated_Image_au1igfau1igfau1i.png",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-timeline-3.webp",
   },
   {
     year: "2022",
     title: "First Product Launch",
     description:
       "Launched our first product with strong industry adoption, gaining early traction and positive client feedback.",
-    image: "/images/wp/Gemini_Generated_Image_1re8lk1re8lk1re8.png",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-inovations-1%20(2).webp",
   },
   {
     year: "2021",
     title: "Founded with Vision",
     description:
       "Trackepay was established with a mission to innovate and deliver smart digital solutions for modern businesses.",
-    image: "/images/wp/image.png",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-inovation.webp",
   },
 ];
 
@@ -234,7 +234,7 @@ export default function AboutUsPage() {
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-linear-to-br from-orange-100 to-orange-200 rounded-full -z-10" />
               <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="/images/wp/Gemini_Generated_Image_5ylehb5ylehb5yle.png"
+                  src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Inovation.webp"
                   alt="Trackepay team in a meeting room"
                   fill
                   className="object-cover"
