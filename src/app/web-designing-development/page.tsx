@@ -237,62 +237,82 @@ export default function WebDesigningDevelopmentPage() {
       </section>
 
       {/* 4-Step Timeline */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <section className="py-24 lg:py-32 bg-slate-50 overflow-hidden">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    
+    {/* Heading Section */}
+    <div className="text-center mb-20">
+      <span className="text-orange-600 font-semibold tracking-widest uppercase text-sm">Workflow</span>
+      <h2 className="mt-3 text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+        Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400">4-Step Process</span>
+      </h2>
+      <p className="mt-4 text-slate-600 max-w-2xl mx-auto text-lg">
+        A streamlined approach designed to take your project from concept to reality with precision.
+      </p>
+    </div>
 
-          {/* Heading */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800">
-              Our 4-Step Process
-            </h2>
-          </div>
+    {/* Timeline Container */}
+    <div className="relative">
+      <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-8">
+        
+        {portfolioTimeline.map((step, i) => (
+          <div
+            key={i}
+            className="group relative flex-1 w-full"
+          >
+            
+            {i !== portfolioTimeline.length - 1 && (
+              <div className="hidden lg:block absolute top-12 left-1/2 w-full h-[3px] bg-gradient-to-r from-orange-500/50 to-transparent z-0" />
+            )}
 
-          {/* Timeline */}
-          <div className="max-w-6xl mx-auto">
-            <div className="flex items-start justify-between gap-6 overflow-x-auto">
+            
+            {i !== portfolioTimeline.length - 1 && (
+              <div className="lg:hidden absolute left-6 top-12 w-[2px] h-full bg-gradient-to-b from-orange-500/50 to-transparent z-0" />
+            )}
 
-              {portfolioTimeline.map((step, i) => (
-                <div
-                  key={i}
-                  className="flex-1 min-w-[220px] text-center relative transition hover:-translate-y-2"
-                >
+            <div className="relative z-10 flex flex-col items-center lg:items-center">
+              
+              {/* Animated Number Circle */}
+              <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-orange-500 text-white font-bold text-lg mb-6 shadow-lg shadow-orange-200 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ring-4 ring-white">
+                {i + 1}
+              </div>
 
-                  {/* Line */}
-                  {i !== portfolioTimeline.length - 1 && (
-                    <div className="absolute top-[22px] left-1/2 w-full h-[2px] bg-orange-200 z-0"></div>
-                  )}
+              {/* Content Card */}
+              <div className="w-full bg-white p-6 rounded-2xl border border-slate-100 shadow-sm group-hover:shadow-xl group-hover:border-orange-100 transition-all duration-300">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-orange-500 mb-1 block">
+                  Phase 0{i + 1}
+                </span>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">
+                  {step.title}
+                </h3>
 
-                  {/* Circle */}
-                  <div className="relative z-10 flex items-center justify-center w-11 h-11 mx-auto rounded-full bg-orange-500 text-white font-bold text-sm mb-4 shadow-md">
-                    {i + 1}
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="text-lg font-semibold text-slate-800 mb-3">
-                    {step.title}
-                  </h3>
-
-                  {/* Items */}
-                  <ul className="space-y-2 text-left">
-                    {step.items.map((item, j) => (
-                      <li
-                        key={j}
-                        className="text-slate-600 text-sm flex items-start gap-2"
-                      >
-                        <span className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-1.5 flex-shrink-0" />
+                <ul className="space-y-3">
+                  {step.items.map((item, j) => (
+                    <li
+                      key={j}
+                      className="text-slate-600 text-sm flex items-start gap-3 group/item"
+                    >
+                      <div className="mt-1.5">
+                        <svg className="w-3.5 h-3.5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="group-hover/item:text-slate-900 transition-colors">
                         {item}
-                      </li>
-                    ))}
-                  </ul>
-
-                </div>
-              ))}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
             </div>
           </div>
+        ))}
 
-        </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Related Services */}
       <section className="py-20 lg:py-28 bg-[#F8FAFC]">

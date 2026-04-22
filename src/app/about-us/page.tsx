@@ -63,7 +63,7 @@ const teamMembers = [
     role: "CTO",
     desc: "Visionary leader with 10+ years in B2B marketing. Drives strategic growth initiatives and oversees client success across all verticals.",
     initials: "BP",
-    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-2.webp",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Biswajit-Pradhan.webp",
     linkedin: "https://linkedin.com/in/biswajit-pradhan",
   },
   {
@@ -71,7 +71,7 @@ const teamMembers = [
     role: "Business Analytics",
     desc: "Data-driven strategist specializing in market research, performance analytics, and ROI optimization for maximum campaign effectiveness.",
     initials: "BS",
-    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-3.webp",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Biswajit-Sahoo2.webp",
     linkedin: "https://www.linkedin.com/in/biswajit-s-ahoo/",
   },
   {
@@ -79,7 +79,7 @@ const teamMembers = [
     role: "Software Developer",
     desc: "Focused on building scalable and efficient applications with modern web technologies and clean architecture.",
     initials: "AP",
-    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-6.webp",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Ashish-Kumar-Puntia.webp",
     linkedin: "https://www.linkedin.com/in/ashish-kumar-puntia/",
   },
 
@@ -88,7 +88,7 @@ const teamMembers = [
     role: "HR Generalist",
     desc: "Focused on people-first strategies, enhancing workplace productivity, boosting employee engagement and supporting company vision.",
     initials: "AD",
-    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-5.webp",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Abhilipsa-Das.webp",
     linkedin: "https://www.linkedin.com/in/abhilipsa-das-1a962a125/",
   },
   {
@@ -96,7 +96,7 @@ const teamMembers = [
     role: "Operations Executive- Admin and Social Media",
     desc: "Operations Executive managing admin processes and social media to drive efficiency and brand growth.",
     initials: "SP",
-    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-7.webp",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Sonalisha-Pramanik.webp",
     linkedin: "https://www.linkedin.com/in/sonalisha-pramanik/",
   },
    {
@@ -104,7 +104,7 @@ const teamMembers = [
     role: "Business Analytics",
     desc: "Data-driven strategist specializing in market research, performance analytics, and ROI optimization for maximum campaign effectiveness.",
     initials: "JD",
-    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-8.webp",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Jyatirmoy-Dey.webp",
     linkedin: "https://www.linkedin.com/in/jyatirmoy10/",
   },
    {
@@ -112,7 +112,7 @@ const teamMembers = [
     role: "Associate Web Developer",
     desc: "Supports the development of responsive web applications, fixes bugs, and collaborates with the team to deliver high-quality user experiences.",
     initials: "SD",
-    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-9.webp",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Sidhant-Sankar-Das.webp",
     linkedin: "https://www.linkedin.com/in/sidhant-sankar-das-3412a7299/",
   },
    {
@@ -120,7 +120,7 @@ const teamMembers = [
     role: "Associate Web Developer",
     desc: "Supports the development of responsive web applications, fixes bugs, and collaborates with the team to deliver high-quality user experiences.",
     initials: "CS",
-    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-11.webp",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Chinmaya-Swain.webp",
     linkedin: "https://www.linkedin.com/in/chinmaya-swain-75a81a292/",
   },
    {
@@ -128,7 +128,7 @@ const teamMembers = [
     role: "Associate Web Developer",
     desc: "Supports the development of responsive web applications, fixes bugs, and collaborates with the team to deliver high-quality user experiences.",
     initials: "SS",
-    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Untitled-design-10.webp",
+    photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Subham-Sidhartha-Sahoo.webp",
     linkedin: "https://www.linkedin.com/in/subham-sidhartha-sahoo-87a2a9372/",
   },
    
@@ -232,9 +232,9 @@ export default function AboutUsPage() {
               {/* Decorative element */}
               <div className="absolute -top-6 -right-6 w-48 h-48 bg-linear-to-br from-orange-100 to-orange-200 rounded-2xl -z-10" />
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-linear-to-br from-orange-100 to-orange-200 rounded-full -z-10" />
-              <div className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-lg">
+              <div className="relative aspect-8/5 rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Inovation.webp"
+                  src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/inovation-for-impact.webp"
                   alt="Trackepay team in a meeting room"
                   fill
                   className="object-cover"

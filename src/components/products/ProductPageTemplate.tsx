@@ -15,6 +15,7 @@ interface ProductPageTemplateProps {
   heroHighlight: string;
   heroDescription: string;
   heroImageSrc?: string;
+  ImageSrc?: string;
   breadcrumbLabel: string;
   contentTitle?: string;
   contentDescription?: string;
@@ -27,6 +28,7 @@ export default function ProductPageTemplate({
   heroHighlight,
   heroDescription,
   heroImageSrc,
+  ImageSrc,
   breadcrumbLabel,
   contentTitle,
   contentDescription,
@@ -68,7 +70,7 @@ export default function ProductPageTemplate({
               </p>
             </div>
             {heroImageSrc && (
-              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+              <div className="relative w-full aspect-[6/4] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
                 <Image
                   src={heroImageSrc || "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/biometric-attendance-system.webp"}
                   alt={heroTitle}
@@ -85,10 +87,10 @@ export default function ProductPageTemplate({
       {/* Content: Description + Feature Checklist */}
       <section className="py-20 lg:py-28 bg-[#F8FAFC]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {heroImageSrc ? (
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+          {ImageSrc ? (
+            <div className="relative w-full aspect-[6/4] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src={heroImageSrc || "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/biometric-attendance-system.webp"}
+                src={ImageSrc || "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/biometric-attendance-system.webp"}
                 alt={heroTitle}
                 fill
                 className="object-cover"

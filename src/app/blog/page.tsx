@@ -39,7 +39,7 @@ export default function BlogPage() {
             >
               <div className="relative w-full aspect-[16/10] overflow-hidden">
                 <Image
-                  src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/vault-corporate-blog-post-3-1024x682.webp"
+                  src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/vault-corporate-blog.webp"
                   alt="Top Strategies for Effective Online Advertising in Bhubaneswar"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"

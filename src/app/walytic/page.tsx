@@ -83,7 +83,9 @@ export default function WalyticPage() {
               WhatsApp API System
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 tracking-tight">
-              <span className="text-orange-400">Walytic</span>
+              <a href="https://www.walytic.com" target="_blank" rel="noopener noreferrer">
+                <span className="text-orange-400 hover:underline">Walytic</span>
+              </a>
             </h1>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
               Automate your WhatsApp communication at scale. Walytic provides a
@@ -92,7 +94,7 @@ export default function WalyticPage() {
               for businesses that need reliability and performance.
             </p>
           </div>
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+          <div className="relative aspect-[14/8] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
             <Image
               src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/walytic-product-2.webp"
               alt="Walytic WhatsApp API platform"

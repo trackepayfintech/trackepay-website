@@ -96,7 +96,11 @@ export default function GreenBubblePage() {
                 WhatsApp Business API
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 tracking-tight">
-                <span className="text-orange-400">GreenBubble</span>
+                <a href="https://www.greenbubble.io" target="_blank" rel="noopener noreferrer">
+                  <span className="text-orange-400 hover:underline">
+                    GreenBubble
+                  </span>
+                </a>
               </h1>
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
                 Enterprise-grade WhatsApp Business automation platform. Automate
@@ -105,7 +109,7 @@ export default function GreenBubblePage() {
                 API.
               </p>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+            <div className="relative aspect-[10/6] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
               <Image
                 src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/green-bubble-img.webp"
                 alt="GreenBubble WhatsApp Business API platform"

@@ -25,6 +25,7 @@ export default function AttendanceManagementSystemPage() {
       contentTitle="Attendance Management System"
       contentDescription="Take control of your workforce attendance with a robust system that integrates seamlessly with biometric devices, mobile apps, and web portals. Get real-time visibility into employee attendance, leaves, and shifts."
       heroImageSrc="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/biometric-attendance-system.webp"
+      ImageSrc="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/attendance-management.webp"
       featureChecklist={[
         "Real-Time Check-In/Out",
         "Leave Management",

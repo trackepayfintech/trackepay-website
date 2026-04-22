@@ -55,7 +55,7 @@ const productLinks = [
 ];
 
 const socialLinks = [
-  { label: "Facebook", href: "https://www.facebook.com/trackepay", Icon: FacebookIcon },
+  { label: "Facebook", href: "https://www.facebook.com/trackepayfintech", Icon: FacebookIcon },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/trackepay", Icon: LinkedInIcon },
   { label: "Instagram", href: "https://www.instagram.com/trackepay", Icon: InstagramIcon },
 ];

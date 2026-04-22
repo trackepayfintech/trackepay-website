@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <>
+    <>  
       {/* Header */}
       <section className="py-20 lg:py-28 bg-[#F8FAFC]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -185,7 +185,7 @@ export default function ContactPage() {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-4 mt-16">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/trackepayfintech"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 border border-white/10"
@@ -200,7 +200,7 @@ export default function ContactPage() {
               </svg>
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/trackepay"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 border border-white/10"
@@ -215,7 +215,7 @@ export default function ContactPage() {
               </svg>
             </Link>
             <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/trackepay"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-orange-500 transition-all duration-300 border border-white/10"

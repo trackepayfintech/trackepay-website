@@ -170,49 +170,57 @@ export default function ServicePageTemplate({
 
       {/* Process Steps */}
       {processSteps && processSteps.length > 0 && (
-        <section className="py-20 lg:py-20 bg-[#F8FAFC]">
+        <section className="py-20 bg-slate-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
             {/* Heading */}
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-16 text-center">
-              {processHeading}
-            </h2>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+                Our 6-Step Development Process
+              </h2>
+            </div>
 
-            {/* Horizontal Timeline */}
-            <div className="max-w-6xl mx-auto">
-              <div className="flex items-start justify-between gap-6 overflow-x-auto">
+            {/* Process Steps Container */}
+            <div className="relative">
+              <div className="flex flex-col sm:flex-row items-start justify-between gap-12 sm:gap-4">
 
                 {processSteps.map((step, i) => (
-                  <div
-                    key={i}
-                    className="flex-1 min-w-[220px] text-center relative"
-                  >
+                  <div key={i} className="relative flex-1 w-full group">
 
-                    {/* Horizontal Line */}
+                    {/* Horizontal Line (Desktop) - Adjusted to sit behind circles */}
                     {i !== processSteps.length - 1 && (
-                      <div className="absolute top-[22px] left-1/2 w-full h-[2px] bg-orange-200"></div>
+                      <div className="hidden sm:block absolute top-6 left-1/2 w-full h-[1px] bg-orange-200 z-0"></div>
                     )}
 
-                    {/* Circle */}
-                    <div className="relative z-10 w-11 h-11 mx-auto rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-sm mb-4">
-                      {i + 1}
+                    {/* Vertical Line (Mobile) - Adjusted for small screens */}
+                    {i !== processSteps.length - 1 && (
+                      <div className="sm:hidden absolute left-[23px] top-12 w-[1px] h-full bg-orange-200 z-0"></div>
+                    )}
+
+                    {/* Step Content */}
+                    <div className="relative z-10 flex flex-row sm:flex-col items-start sm:items-center text-left sm:text-center gap-6 sm:gap-0">
+
+                      {/* Circle Icon */}
+                      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-lg mb-0 sm:mb-6 shadow-md ring-8 ring-slate-50 sm:ring-offset-0">
+                        {i + 1}
+                      </div>
+
+                      {/* Text Area */}
+                      <div>
+                        <h3 className="text-lg font-bold text-slate-800 mb-3">
+                          {step.title}
+                        </h3>
+                        <p className="text-slate-600 text-sm leading-relaxed">
+                          {step.description}
+                        </p>
+                      </div>
+
                     </div>
-
-                    {/* Content */}
-                    <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                      {step.title}
-                    </h3>
-
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      {step.description}
-                    </p>
-
                   </div>
                 ))}
 
               </div>
             </div>
-
           </div>
         </section>
       )}

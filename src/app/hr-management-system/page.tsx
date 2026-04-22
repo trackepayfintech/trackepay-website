@@ -22,6 +22,7 @@ export default function HRManagementSystemPage() {
       heroHighlight="Management"
       heroDescription="Optimize your workforce with a powerful HR Management System that streamlines recruitment, payroll, attendance, employee records, and compliance—all in one unified platform."
       heroImageSrc="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/hr-manegement.webp"
+      ImageSrc="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/hr-management-system.webp"
       breadcrumbLabel="HR Management System"
       contentTitle="HR Management System"
       contentDescription="Our HR Management System is a comprehensive platform that centralizes all your human resource operations. From hiring to retirement, manage every aspect of the employee lifecycle with ease and efficiency."
