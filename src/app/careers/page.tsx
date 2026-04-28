@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 
 import CTABanner from "@/components/shared/CTABanner";
 
@@ -24,19 +25,24 @@ export default function CareersPage() {
             Unlock your potential — explore growing career fields and find the
             path that aligns with your passion and skills.
           </p>
-
         </div>
+
         <div className="flex justify-center mt-7 px-4">
-          <div className="w-full max-w-5xl overflow-hidden rounded-2xl">
-            <iframe
-              src="https://share.deftform.com/a4a4cc35-b561-4606-92ae-72c38ce5806d?embed=1"
-              className="w-full h-450 md:h-250 lg:h-405 border-0"
-              loading="eager"
+          <div className="w-full max-w-5xl">
+            <div
+              className="deftform"
+              data-form-id="a4a4cc35-b561-4606-92ae-72c38ce5806d"
+              data-form-width="100%"
+              data-form-align="center"
+              data-form-auto-height="1"
+            />
+            <Script
+              src="https://cdn.deftform.com/embed.js"
+              strategy="afterInteractive"
             />
           </div>
         </div>
       </section>
-
 
       <CTABanner />
     </>
