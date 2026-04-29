@@ -82,7 +82,7 @@ export default function Footer() {
             <p className="text-white/45 text-sm leading-relaxed max-w-sm mb-6">
               Enterprise-grade technology trusted by government agencies and
               150+ businesses across India. Building mission-critical software
-              since 2020.
+              since 2023.
             </p>
 
             {/* Contact details */}

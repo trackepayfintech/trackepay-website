@@ -16,7 +16,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "About Trackepay — Software & Digital Solutions Company in Bhubaneswar",
   description:
-    "Founded in 2021, Trackepay Fintech (OPC) Pvt Ltd is a Bhubaneswar-based software and digital solutions company serving 150+ businesses across India.",
+    "Founded in 2023, Trackepay Fintech (OPC) Pvt Ltd is a Bhubaneswar-based software and digital solutions company serving 150+ businesses across India.",
   path: "/about-us",
   keywords: [
     "about trackepay",
@@ -144,38 +144,31 @@ const teamMembers = [
 
 const milestones = [
   {
-    year: "2025",
-    title: "Sustainability & Community",
+    year: "Apr 2026",
+    title: "AI-Powered Products & Scale",
     description:
-      "Shifted focus toward sustainability initiatives and meaningful community engagement through technology.",
+      "Rolled out AI-assisted features across our WhatsApp and analytics products. Crossed 50+ police stations and 150+ enterprise customers across India.",
     image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-timeline-1.webp",
   },
   {
-    year: "2024",
-    title: "Remote Work Integration",
+    year: "2025",
+    title: "Government Sector Wins",
     description:
-      "Embraced a remote-first culture, enabling our team to collaborate seamlessly across geographies.",
+      "Deployed Sarai 2.0 with the Bhubaneswar–Cuttack Commissionerate Police and expanded smart-policing footprint across Odisha.",
     image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-timeline-2.webp",
   },
   {
-    year: "2023",
-    title: "Market Expansion",
+    year: "2024",
+    title: "First Products Launched",
     description:
-      "Expanded into new markets and formed strategic partnerships to accelerate growth and broaden service offerings.",
+      "Launched GreenBubble (WhatsApp Business API) and Walytic (WhatsApp automation). Strong early traction with marketing and ops teams.",
     image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-timeline-3.webp",
   },
   {
-    year: "2022",
-    title: "First Product Launch",
-    description:
-      "Launched our first product with strong industry adoption, gaining early traction and positive client feedback.",
-    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-inovations-1%20(2).webp",
-  },
-  {
-    year: "2021",
+    year: "2023",
     title: "Founded with Vision",
     description:
-      "Trackepay was established with a mission to innovate and deliver smart digital solutions for modern businesses.",
+      "Trackepay Fintech was established in Bhubaneswar with a mission to build smart digital solutions for modern businesses and government.",
     image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/corporate-inovation.webp",
   },
 ];
@@ -224,7 +217,7 @@ export default function AboutUsPage() {
               <p className="mt-6 text-slate-600 leading-relaxed">
                 We are Trackepay Fintech (OPC) Pvt Ltd, driving meaningful
                 change through innovation, integrity, and commitment. Founded in
-                2021, we bring together a team of passionate engineers, designers,
+                2023, we bring together a team of passionate engineers, designers,
                 and strategists who share a common goal: building technology that
                 works for people.
               </p>
