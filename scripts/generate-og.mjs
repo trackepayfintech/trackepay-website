@@ -8,9 +8,12 @@
 //   node scripts/generate-og.mjs
 
 import { ImageResponse } from "@vercel/og";
+import { createElement } from "react";
 import { writeFile, mkdir, readFile } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+
+const h = createElement;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -55,12 +58,6 @@ const PAGES = [
     title: "Top Strategies for Online Advertising in Bhubaneswar",
   },
 ];
-
-// React-free: build the JSX tree with hyperscript objects ImageResponse accepts.
-function h(type, props = {}, ...children) {
-  const flat = children.flat().filter((c) => c !== null && c !== undefined && c !== false);
-  return { type, props: { ...props, children: flat.length === 1 ? flat[0] : flat } };
-}
 
 function template({ title, eyebrow, logoSrc }) {
   return h(
