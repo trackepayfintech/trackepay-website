@@ -95,11 +95,11 @@ export default function Footer() {
                 info@trackepay.in
               </a>
               <a
-                href="tel:+917978611887"
+                href="tel:+918917342626"
                 className="flex items-center gap-2.5 text-sm text-white/40 hover:text-white/70 transition-colors"
               >
                 <Phone className="h-4 w-4 shrink-0" />
-                +91 797 861 1887
+                +91 891 734 2626
               </a>
               <div className="flex items-start gap-2.5 text-sm text-white/40">
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
