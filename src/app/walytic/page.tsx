@@ -12,12 +12,21 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Walytic - WhatsApp API System | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "Walytic — WhatsApp API Automation Platform by Trackepay",
   description:
-    "Walytic is a WhatsApp API system for automating WhatsApp communication at scale with session management, bulk campaigns, webhooks, and more.",
-};
+    "Walytic automates WhatsApp at scale: session management, bulk campaigns, webhooks, and team collaboration. Built for marketing & support teams in India.",
+  path: "/walytic",
+  keywords: [
+    "walytic",
+    "whatsapp api automation",
+    "bulk whatsapp messaging india",
+    "whatsapp campaign tool",
+    "whatsapp marketing software india",
+  ],
+});
 
 const features = [
   {

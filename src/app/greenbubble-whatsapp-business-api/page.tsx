@@ -13,12 +13,23 @@ import {
   ArrowRight,
 } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "GreenBubble - WhatsApp Business API | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "WhatsApp Business API Provider in India — GreenBubble by Trackepay",
   description:
-    "GreenBubble is an enterprise WhatsApp Business API platform for automated messaging, broadcasting, campaigns, AI chat assistance, and team collaboration.",
-};
+    "Official WhatsApp Business API provider in India. Send broadcasts, automate replies, run campaigns, integrate AI chat. Affordable pricing, fast onboarding.",
+  path: "/greenbubble-whatsapp-business-api",
+  keywords: [
+    "whatsapp business api",
+    "whatsapp business api provider in india",
+    "whatsapp business api pricing",
+    "whatsapp business api free",
+    "whatsapp business api for bulk messaging",
+    "bulk whatsapp messaging india",
+    "greenbubble",
+  ],
+});
 
 const features = [
   {

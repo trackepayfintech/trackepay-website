@@ -2,13 +2,20 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CalendarDays, User, ArrowLeft, ChevronRight } from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title:
-    "Top Strategies for Effective Online Advertising in Bhubaneswar | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "Top Strategies for Effective Online Advertising in Bhubaneswar",
   description:
-    "Discover the top strategies for effective online advertising in Bhubaneswar including audience targeting, platform selection, content creation, and performance measurement.",
-};
+    "Audience targeting, platform selection, content creation, and performance measurement — the top strategies for online advertising in Bhubaneswar in 2026.",
+  path: "/top-strategies-for-effective-online-advertising-in-bhubaneswar",
+  keywords: [
+    "online advertising bhubaneswar",
+    "google ads bhubaneswar",
+    "social media ads bhubaneswar",
+    "ppc bhubaneswar",
+  ],
+});
 
 export default function BlogPostPage() {
   return (

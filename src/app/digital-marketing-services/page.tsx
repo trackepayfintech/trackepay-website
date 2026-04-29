@@ -9,12 +9,23 @@ import {
   FileText,
 } from "lucide-react";
 import ServicePageTemplate from "@/components/services/ServicePageTemplate";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Digital Marketing Services - Trackepay Fintech",
+export const metadata: Metadata = buildMetadata({
+  title:
+    "Digital Marketing Agency in Bhubaneswar — SEO, PPC & Social Media",
   description:
-    "Comprehensive digital marketing services including SEO, PPC, social media marketing, email marketing, and content marketing.",
-};
+    "Best digital marketing agency in Bhubaneswar. SEO, Google Ads, social media, content & email marketing for measurable growth across India.",
+  path: "/digital-marketing-services",
+  keywords: [
+    "digital marketing agency bhubaneswar",
+    "best digital marketing agency odisha",
+    "seo services bhubaneswar",
+    "ppc agency india",
+    "social media marketing bhubaneswar",
+    "online marketing company india",
+  ],
+});
 
 export default function DigitalMarketingPage() {
   return (

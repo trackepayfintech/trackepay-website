@@ -20,12 +20,22 @@ import {
   ArrowRight,
 } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services - Trackepay Fintech",
+export const metadata: Metadata = buildMetadata({
+  title:
+    "IT Services in Bhubaneswar — Software, Web, Mobile & Marketing",
   description:
-    "We help businesses evolve through smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
-};
+    "End-to-end IT services in Bhubaneswar including custom software development, web & mobile apps, digital marketing, branding, and analytics — by Trackepay.",
+  path: "/services",
+  keywords: [
+    "it services bhubaneswar",
+    "it company bhubaneswar",
+    "software services bhubaneswar",
+    "digital agency bhubaneswar",
+    "best software company in bhubaneswar",
+  ],
+});
 
 const methodology = [
   {

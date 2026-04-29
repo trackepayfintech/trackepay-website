@@ -9,12 +9,22 @@ import {
   Globe,
 } from "lucide-react";
 import ServicePageTemplate from "@/components/services/ServicePageTemplate";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Branding Building Packages - Trackepay Fintech",
+export const metadata: Metadata = buildMetadata({
+  title:
+    "Branding Agency in Bhubaneswar — Logo, Identity & Brand Strategy",
   description:
-    "Build a strong, memorable brand identity that resonates with your audience. Complete branding packages for startups and growing businesses.",
-};
+    "Affordable branding packages from Trackepay's Bhubaneswar studio: logo design, brand identity, messaging, and launch collateral for startups and SMBs.",
+  path: "/branding-building-packages",
+  keywords: [
+    "branding agency bhubaneswar",
+    "logo design bhubaneswar",
+    "brand identity design india",
+    "branding packages india",
+    "startup branding agency",
+  ],
+});
 
 export default function BrandingPage() {
   return (

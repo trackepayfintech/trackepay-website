@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import { FileText } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Career Application | Trackepay",
-  description:
-    "Apply for a career at Trackepay. Fill out our career application form to join our growing team.",
+  ...buildMetadata({
+    title: "Career Application — Trackepay",
+    description:
+      "Apply for a role at Trackepay in Bhubaneswar. Fill out the application form to join our growing team.",
+    path: "/career-form",
+  }),
+  robots: { index: false, follow: true },
 };
 
 export default function CareerFormPage() {

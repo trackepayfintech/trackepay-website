@@ -11,12 +11,20 @@ import {
   ArrowRight,
 } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Us - Trackepay Fintech (OPC) Pvt Ltd",
+export const metadata: Metadata = buildMetadata({
+  title: "About Trackepay — Software & Digital Solutions Company in Bhubaneswar",
   description:
-    "Learn about Trackepay's mission to shape a better future through smart, modern engineering. Founded in 2021, we deliver innovative digital solutions.",
-};
+    "Founded in 2021, Trackepay Fintech (OPC) Pvt Ltd is a Bhubaneswar-based software and digital solutions company serving 150+ businesses across India.",
+  path: "/about-us",
+  keywords: [
+    "about trackepay",
+    "software company in bhubaneswar",
+    "trackepay fintech",
+    "it company odisha",
+  ],
+});
 
 const values = [
   {

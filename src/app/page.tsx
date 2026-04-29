@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/home/Hero";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
 import {
   ArrowRight,
@@ -20,17 +21,21 @@ import {
   TrendingUp,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title:
-    "Trackepay - Mission-Critical Software for Governments & Enterprises",
+    "Trackepay | Software Company in Bhubaneswar — Custom Software, Web, Mobile & Digital Marketing",
   description:
-    "From smart policing systems for Indian law enforcement to enterprise SaaS — Trackepay delivers mission-critical technology trusted by 50+ police stations and 150+ enterprises.",
-  openGraph: {
-    title: "Trackepay — Software Governments & Enterprises Rely On",
-    description:
-      "Mission-critical technology with 99.9% uptime. Smart policing, enterprise SaaS, and global IT services.",
-  },
-};
+    "Trackepay is a leading software & IT services company in Bhubaneswar, India. We build custom software, CRM, web & mobile apps, run digital marketing, and serve 150+ enterprises and 50+ police stations.",
+  path: "/",
+  keywords: [
+    "software company in bhubaneswar",
+    "software development company bhubaneswar",
+    "it company bhubaneswar",
+    "custom software development india",
+    "digital marketing agency bhubaneswar",
+    "trackepay",
+  ],
+});
 
 /* ───────────────────────── Data ───────────────────────── */
 
@@ -174,13 +179,13 @@ export default function Home() {
               {[...clientLogos, ...clientLogos].map((logo, i) => (
                 <div
                   key={`${logo.alt}-${i}`}
-                  className="relative h-10 w-32 mx-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shrink-0"
+                  className="relative h-16 w-44 sm:h-20 sm:w-56 lg:h-24 lg:w-64 mx-6 sm:mx-10 lg:mx-12 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shrink-0 flex items-center justify-center"
                 >
                   <Image
                     src={logo.src}
                     alt={logo.alt}
                     fill
-                    sizes="128px"
+                    sizes="(min-width: 1024px) 256px, (min-width: 640px) 224px, 176px"
                     className="object-contain"
                   />
                 </div>

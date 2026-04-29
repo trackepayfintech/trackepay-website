@@ -1,7 +1,9 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight, ArrowLeft, CheckCircle2 } from "lucide-react";
 import { notFound } from "next/navigation";
+import { buildMetadata } from "@/lib/seo";
 
 // The "Database" of Case Studies
 const caseStudies: Record<string, any> = {
@@ -105,6 +107,34 @@ const caseStudies: Record<string, any> = {
 
 export async function generateStaticParams() {
   return Object.keys(caseStudies).map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const data = caseStudies[slug];
+  if (!data) {
+    return buildMetadata({
+      title: "Case Study Not Found",
+      description: "The requested case study could not be found.",
+      path: `/portfolio/${slug}`,
+    });
+  }
+  return buildMetadata({
+    title: `${data.title} — Case Study`,
+    description: data.description,
+    path: `/portfolio/${slug}`,
+    ogImage: data.image,
+    keywords: [
+      data.industry?.toLowerCase(),
+      data.client?.toLowerCase(),
+      ...(data.services ?? []).map((s: string) => s.toLowerCase()),
+      "trackepay case study",
+    ].filter(Boolean) as string[],
+  });
 }
 
 export default async function CaseStudyPage({ 

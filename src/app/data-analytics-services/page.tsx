@@ -9,12 +9,22 @@ import {
   Target,
 } from "lucide-react";
 import ServicePageTemplate from "@/components/services/ServicePageTemplate";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Data Analytics Services - Trackepay Fintech",
+export const metadata: Metadata = buildMetadata({
+  title:
+    "Data Analytics Services in India — BI, Dashboards & Insights",
   description:
-    "We specialize in harnessing the full potential of your data to drive informed decisions and business growth.",
-};
+    "Turn raw data into decisions. Trackepay's data analytics services cover dashboards, predictive analytics, and reporting tools for businesses across India.",
+  path: "/data-analytics-services",
+  keywords: [
+    "data analytics services india",
+    "business intelligence india",
+    "dashboard development india",
+    "predictive analytics services",
+    "data analytics company bhubaneswar",
+  ],
+});
 
 export default function DataAnalyticsPage() {
   return (

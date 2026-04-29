@@ -8,12 +8,22 @@ import {
   ShieldCheck,
   Clock,
 } from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Attendance Management System | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title:
+    "Attendance Management Software for Business — Biometric & Mobile",
   description:
-    "Our Attendance Management System automates check-ins, shift tracking, and leave records to ensure accurate workforce management and compliance.",
-};
+    "Automate employee attendance with biometric, mobile, and shift tracking. Affordable attendance management software for SMBs and enterprises in India.",
+  path: "/attendance-management-system",
+  keywords: [
+    "attendance management software",
+    "biometric attendance system",
+    "employee attendance software india",
+    "attendance management system",
+    "shift management software",
+  ],
+});
 
 export default function AttendanceManagementSystemPage() {
   return (

@@ -5,12 +5,22 @@ import {
   Globe,
 } from "lucide-react";
 import ServicePageTemplate from "@/components/services/ServicePageTemplate";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Mobile Application Design & Development - Trackepay Fintech",
+export const metadata: Metadata = buildMetadata({
+  title:
+    "Mobile App Development Company in Bhubaneswar — iOS, Android & Cross-Platform",
   description:
-    "Welcome to TrackePay, where innovation and technology meet! We design and develop mobile applications that engage users and drive results.",
-};
+    "Custom iOS, Android, and cross-platform mobile app development by Trackepay's Bhubaneswar team. From concept to launch, we build apps that scale.",
+  path: "/mobile-application-design-development",
+  keywords: [
+    "mobile app development bhubaneswar",
+    "mobile application development india",
+    "react native development india",
+    "ios app development india",
+    "android app development india",
+  ],
+});
 
 export default function MobileAppPage() {
   return (

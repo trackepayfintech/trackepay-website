@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
 import CTABanner from "@/components/shared/CTABanner";
 import Image from "next/image";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Our Certifications | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "Certifications — ISO 9001, ISO 27001 & Startup India | Trackepay",
   description:
-    "Explore the certifications and quality standards achieved by Trackepay Fintech.",
-};
+    "Trackepay is ISO 9001:2015 and ISO 27001:2013 certified, and recognised under Startup India — proof of our quality and security standards.",
+  path: "/our-certifications",
+  keywords: [
+    "iso 9001 certified software company",
+    "iso 27001 certified india",
+    "startup india recognised",
+    "trackepay certifications",
+  ],
+});
 
 const certifications = [
   {

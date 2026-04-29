@@ -5,12 +5,22 @@ import {
   Smartphone,
 } from "lucide-react";
 import ServicePageTemplate from "@/components/services/ServicePageTemplate";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Software & CRM Development Services - Trackepay Fintech",
+export const metadata: Metadata = buildMetadata({
+  title:
+    "Custom CRM & Software Development Company in India",
   description:
-    "Transform your business through technology with custom software and CRM development services.",
-};
+    "Custom CRM development services for sales, marketing & customer service. Tailored CRM software that integrates with your existing tools and scales with you.",
+  path: "/software-crm-development-services",
+  keywords: [
+    "crm development services india",
+    "custom crm development",
+    "crm software company india",
+    "custom software development india",
+    "saas development company india",
+  ],
+});
 
 export default function SoftwareCrmPage() {
   return (

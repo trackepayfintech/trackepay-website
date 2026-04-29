@@ -16,12 +16,22 @@ import {
   ChevronRight,
 } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Web Designing & Development - Trackepay Fintech",
+export const metadata: Metadata = buildMetadata({
+  title: "Web Development Company in Bhubaneswar — Custom Website Design",
   description:
-    "Elevate your brand online with expert Web & App Development. We craft responsive, cutting-edge websites and mobile apps.",
-};
+    "Top web development company in Bhubaneswar building custom, responsive, SEO-friendly websites and web applications for businesses across India.",
+  path: "/web-designing-development",
+  keywords: [
+    "web development company bhubaneswar",
+    "web designing bhubaneswar",
+    "website design bhubaneswar",
+    "custom website development india",
+    "react development india",
+    "nextjs development company india",
+  ],
+});
 
 const serviceCards = [
   {

@@ -2,12 +2,21 @@ import type { Metadata } from "next";
 import Script from "next/script";
 
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Careers | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "Careers at Trackepay — Software Jobs in Bhubaneswar",
   description:
-    "Unlock your potential—explore growing career fields and find the path that aligns with your passion and skills at Trackepay.",
-};
+    "Open roles at Trackepay in Bhubaneswar. Software, design, marketing, and product engineering opportunities for freshers and experienced professionals.",
+  path: "/careers",
+  keywords: [
+    "careers bhubaneswar",
+    "software jobs bhubaneswar",
+    "trackepay jobs",
+    "it jobs bhubaneswar",
+    "software company in bhubaneswar for freshers",
+  ],
+});
 
 export default function CareersPage() {
   return (

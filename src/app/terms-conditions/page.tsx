@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Terms & Conditions | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "Terms & Conditions",
   description:
-    "Read the terms and conditions governing the use of Trackepay Fintech services, software, and website.",
-};
+    "Terms and conditions governing the use of Trackepay Fintech services, software, and website.",
+  path: "/terms-conditions",
+});
 
 export default function TermsConditionsPage() {
   return (

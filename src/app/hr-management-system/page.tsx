@@ -8,12 +8,21 @@ import {
   Clock,
   CalendarDays,
 } from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "HR Management System | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "HR Management System Software in India — HRMS by Trackepay",
   description:
-    "Optimize your workforce with a powerful HR Management System that streamlines recruitment, payroll, attendance, employee records, and compliance—all in one unified platform.",
-};
+    "Centralise hiring, payroll, attendance, and compliance with Trackepay's HR Management System. Built for fast-growing teams across India.",
+  path: "/hr-management-system",
+  keywords: [
+    "hr management system india",
+    "hrms software india",
+    "payroll software india",
+    "employee management system",
+    "hr software for small business india",
+  ],
+});
 
 export default function HRManagementSystemPage() {
   return (

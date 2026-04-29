@@ -24,13 +24,21 @@ import {
   Zap,
 } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title:
-    "Government & Police Solutions - Smart Patrol Management | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "Smart Patrol & Police Management Software for Indian Law Enforcement",
   description:
-    "AI-powered patrol management system for police departments. QR patrolling, live tracking, face recognition, incident reporting & advanced analytics.",
-};
+    "Trackepay builds smart policing software for Indian law enforcement: patrol tracking, beat management, QR check-ins, AI face recognition, and analytics.",
+  path: "/government-police-solutions",
+  keywords: [
+    "police management software",
+    "patrol management system india",
+    "smart policing india",
+    "beat management software",
+    "law enforcement technology india",
+  ],
+});
 
 const stats = [
   { value: "50+", label: "Police Stations", icon: Building2 },

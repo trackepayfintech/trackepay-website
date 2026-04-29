@@ -2,12 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Talent Acquisition | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "Talent Acquisition & Recruitment Services in India — Trackepay",
   description:
-    "Recruitment and staffing solutions to help you find, attract, and retain the best talent for your organization.",
-};
+    "Hire faster with Trackepay's talent acquisition services. Tech, sales, and operations roles filled across Bhubaneswar and pan-India.",
+  path: "/talent-acquisition",
+  keywords: [
+    "talent acquisition india",
+    "recruitment services bhubaneswar",
+    "hiring agency india",
+    "tech recruitment india",
+  ],
+});
 
 export default function TalentAcquisitionPage() {
   return (

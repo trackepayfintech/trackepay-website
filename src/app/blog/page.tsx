@@ -3,12 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { CalendarDays, Tag, ArrowRight } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Blog | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "Trackepay Blog — Software, Marketing & Business Insights",
   description:
-    "Read the latest insights, tips, and strategies on digital marketing, software development, and business growth from Trackepay.",
-};
+    "Insights, tips, and strategies on software development, digital marketing, and business growth from the Trackepay team in Bhubaneswar.",
+  path: "/blog",
+  keywords: [
+    "trackepay blog",
+    "software development blog india",
+    "digital marketing blog bhubaneswar",
+  ],
+});
 
 export default function BlogPage() {
   return (

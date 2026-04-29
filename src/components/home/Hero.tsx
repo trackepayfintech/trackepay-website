@@ -123,7 +123,7 @@ export default function Hero() {
 
           <Link
             href="/portfolio"
-            className="inline-flex items-center gap-2 text-white/50 hover:text-white font-medium text-[15px] transition-colors duration-200 px-4 py-3.5"
+            className="inline-flex items-center gap-2 bg-white text-slate-900 border border-white px-7 py-3.5 rounded-lg font-semibold text-[15px] transition-all duration-200 hover:bg-white/90 active:scale-[0.98] shadow-lg shadow-black/10"
           >
             View Our Work
             <ArrowRight className="h-4 w-4" />

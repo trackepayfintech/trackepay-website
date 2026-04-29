@@ -17,11 +17,20 @@ import {
 } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
 
-export const metadata: Metadata = {
-  title: "Technology - Trackepay Fintech",
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Technology Stack — Trackepay's Engineering Capabilities",
   description:
-    "Smart digital solutions, innovative IT strategies, and automation tools that drive efficiency, growth, and scalability.",
-};
+    "Trackepay's tech stack covers web (React, Next.js), mobile (React Native, iOS, Android), data (Python, BI), and cloud (AWS, GCP).",
+  path: "/technology",
+  keywords: [
+    "trackepay technology stack",
+    "react development",
+    "nextjs development",
+    "react native india",
+  ],
+});
 
 const serviceCards = [
   {

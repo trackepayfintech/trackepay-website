@@ -11,12 +11,22 @@ import {
   PieChart,
   Armchair,
 } from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Restaurant Management System | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title:
+    "Restaurant Management Software India — POS, Kitchen & Inventory",
   description:
-    "A smart and efficient solution to manage restaurant operations including orders, billing, kitchen management, inventory, and staff scheduling.",
-};
+    "All-in-one restaurant management software for orders, billing, kitchen workflow, inventory, and staff. Trusted by single outlets and chains across India.",
+  path: "/hotel-management-system",
+  keywords: [
+    "restaurant management software india",
+    "restaurant pos software",
+    "restaurant billing software",
+    "hotel management software india",
+    "kitchen management system",
+  ],
+});
 
 export default function RestaurantManagementSystemPage() {
   return (

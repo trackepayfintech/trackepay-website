@@ -3,12 +3,20 @@ import { Phone, Mail, MapPin, FileText } from "lucide-react";
 import Link from "next/link";
 import CTABanner from "@/components/shared/CTABanner";
 import PhoneField from "@/components/PhoneField";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact Us | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "Contact Trackepay — Software Company in Bhubaneswar, India",
   description:
-    "Get in touch with Trackepay. If you have any inquiries or require further information, our team will respond at the earliest opportunity.",
-};
+    "Get in touch with Trackepay for software development, web/mobile, and digital marketing services. Bhubaneswar office, serving clients pan-India.",
+  path: "/contact",
+  keywords: [
+    "contact trackepay",
+    "software company contact bhubaneswar",
+    "trackepay phone number",
+    "trackepay email",
+  ],
+});
 
 export default function ContactPage() {
   return (

@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import CTABanner from "@/components/shared/CTABanner";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Our Team - Trackepay Fintech (OPC) Pvt Ltd",
+export const metadata: Metadata = buildMetadata({
+  title: "Our Team — Trackepay Leadership & Engineers",
   description:
-    "Meet the Trackepay team. Access a trusted collection of insights, tools, and expertise from passionate professionals dedicated to your success.",
-};
+    "Meet the people behind Trackepay — engineers, designers, and strategists building software and digital solutions from Bhubaneswar.",
+  path: "/teams",
+  keywords: [
+    "trackepay team",
+    "trackepay leadership",
+    "software engineers bhubaneswar",
+  ],
+});
 
 const teamMembers = [
   {
@@ -124,12 +131,13 @@ export default function TeamsPage() {
               {[...clientLogos, ...clientLogos].map((logo, i) => (
                 <div
                   key={`${logo.alt}-${i}`}
-                  className="relative h-10 w-32 mx-8 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex-shrink-0"
+                  className="relative h-16 w-44 sm:h-20 sm:w-56 lg:h-24 lg:w-64 mx-6 sm:mx-10 lg:mx-12 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shrink-0 flex items-center justify-center"
                 >
                   <Image
                     src={logo.src}
                     alt={logo.alt}
                     fill
+                    sizes="(min-width: 1024px) 256px, (min-width: 640px) 224px, 176px"
                     className="object-contain"
                   />
                 </div>

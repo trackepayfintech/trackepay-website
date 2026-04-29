@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Cookie Policy | Trackepay",
+export const metadata: Metadata = buildMetadata({
+  title: "Cookie Policy",
   description:
-    "Learn how Trackepay Fintech (OPC) Pvt Ltd uses cookies and similar tracking technologies on its website.",
-};
+    "How Trackepay Fintech (OPC) Pvt Ltd uses cookies and similar tracking technologies on its website.",
+  path: "/cookie-policy",
+});
 
 export default function CookiePolicyPage() {
   return (
