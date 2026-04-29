@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Instrument_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import CookieConsent from "@/components/shared/CookieConsent";
 import "./globals.css";
 
 const GTM_ID = "GTM-5LNFVCRH";
@@ -100,6 +101,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );

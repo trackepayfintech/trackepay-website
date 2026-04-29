@@ -202,6 +202,12 @@ export default function Footer() {
             >
               Terms & Conditions
             </Link>
+            <Link
+              href="/cookie-policy"
+              className="text-xs text-white/30 hover:text-white/60 transition-colors"
+            >
+              Cookie Policy
+            </Link>
           </div>
         </div>
       </div>
