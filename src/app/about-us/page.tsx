@@ -11,6 +11,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import CTABanner from "@/components/shared/CTABanner";
+import { Reveal, Stagger, StaggerItem } from "@/components/shared/Motion";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -257,9 +258,9 @@ export default function AboutUsPage() {
               The principles that guide everything we do
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" staggerChildren={0.1}>
             {values.map((item) => (
-              <div
+              <StaggerItem
                 key={item.title}
                 className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
@@ -272,9 +273,9 @@ export default function AboutUsPage() {
                 <p className="mt-2 text-sm text-slate-500 leading-relaxed">
                   {item.description}
                 </p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 
@@ -384,8 +385,12 @@ export default function AboutUsPage() {
 
             <div className="space-y-12">
               {milestones.map((m, i) => (
-                <div
+                <Reveal
+                  as="div"
                   key={m.year}
+                  direction={i % 2 === 0 ? "left" : "right"}
+                  distance={50}
+                  duration={0.7}
                   className={`relative flex flex-col sm:flex-row items-start gap-6 ${i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
                     }`}
                 >
@@ -435,7 +440,7 @@ export default function AboutUsPage() {
                   ) : (
                     <div className="hidden sm:block sm:w-1/2" />
                   )}
-                </div>
+                </Reveal>
               ))}
             </div>
           </div>
