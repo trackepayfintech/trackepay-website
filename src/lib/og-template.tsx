@@ -30,7 +30,7 @@ export type OgVariant = {
 };
 
 export async function renderOG({ title, eyebrow }: OgVariant) {
-  const logoSrc = getLogoDataUrl();
+  const logoSrc = getLogoSrc();
 
   return new ImageResponse(
     (
