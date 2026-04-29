@@ -7,7 +7,7 @@
 // Run before `next build`:
 //   node scripts/generate-og.mjs
 
-import { ImageResponse } from "next/og";
+import { ImageResponse } from "@vercel/og";
 import { writeFile, mkdir, readFile } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
