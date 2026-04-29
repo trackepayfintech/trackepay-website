@@ -23,10 +23,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const DEFAULT_TITLE =
-  "Trackepay | Software Company in Bhubaneswar — IT Services, Web, Mobile & Digital Marketing";
+const DEFAULT_TITLE = "Trackepay — Software Company in Bhubaneswar, India";
 const DEFAULT_DESCRIPTION =
-  "Trackepay is a software and digital solutions company in Bhubaneswar, India. We build custom software, CRM, web and mobile apps, and run digital marketing for growing businesses.";
+  "Trackepay builds custom software, CRM, web & mobile apps for 150+ businesses across India. Bhubaneswar-based software & digital marketing team.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

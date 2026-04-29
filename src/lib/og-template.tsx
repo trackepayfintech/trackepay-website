@@ -6,14 +6,22 @@ export const OG_SIZE = { width: 1200, height: 630 };
 export const OG_CONTENT_TYPE = "image/png";
 export const OG_ALT = "Trackepay — Software Company in Bhubaneswar";
 
-let _logoDataUrl: string | null = null;
-function getLogoDataUrl(): string {
-  if (_logoDataUrl) return _logoDataUrl;
-  const buf = readFileSync(
-    join(process.cwd(), "public", "images", "logos", "logo-dark.png")
-  );
-  _logoDataUrl = `data:image/png;base64,${buf.toString("base64")}`;
-  return _logoDataUrl;
+const LOGO_RELATIVE = "public/images/logos/logo-dark.png";
+const LOGO_FALLBACK_URL = "https://www.trackepay.in/images/logos/logo-dark.png";
+
+let _logoSrc: string | null = null;
+function getLogoSrc(): string {
+  if (_logoSrc) return _logoSrc;
+  // Try filesystem first (works at build time during `next build`).
+  try {
+    const buf = readFileSync(join(process.cwd(), LOGO_RELATIVE));
+    _logoSrc = `data:image/png;base64,${buf.toString("base64")}`;
+    return _logoSrc;
+  } catch {
+    // Fall back to live URL — satori fetches it at render time.
+    _logoSrc = LOGO_FALLBACK_URL;
+    return _logoSrc;
+  }
 }
 
 export type OgVariant = {
@@ -79,9 +87,9 @@ export async function renderOG({ title, eyebrow }: OgVariant) {
           <img
             src={logoSrc}
             alt="Trackepay"
-            width={260}
-            height={64}
-            style={{ height: 64, width: "auto" }}
+            width={320}
+            height={80}
+            style={{ height: 80, width: "auto", display: "block" }}
           />
           <div
             style={{

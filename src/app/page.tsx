@@ -22,10 +22,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = buildMetadata({
-  title:
-    "Trackepay | Software Company in Bhubaneswar — Custom Software, Web, Mobile & Digital Marketing",
+  title: "Trackepay — Software Company in Bhubaneswar, India",
   description:
-    "Trackepay is a leading software & IT services company in Bhubaneswar, India. We build custom software, CRM, web & mobile apps, run digital marketing, and serve 150+ enterprises and 50+ police stations.",
+    "Trackepay builds custom software, CRM, web & mobile apps for 150+ businesses across India. Bhubaneswar-based software & digital marketing team.",
   path: "/",
   keywords: [
     "software company in bhubaneswar",
