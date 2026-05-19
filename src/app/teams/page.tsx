@@ -17,7 +17,7 @@ export const metadata: Metadata = buildMetadata({
 
 const teamMembers = [
   {
-    name: "Diptendu Shekhar Nayak",
+    name: "Diptendu Shekhar Naik",
     role: "Director",
     initials: "DN",
     photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Diptendu-Shekhar-Nayak.webp",
@@ -34,7 +34,7 @@ const teamMembers = [
   },
   {
     name: "Biswajit Sahoo",
-    role: "Business Analytics",
+    role: "Senior Business Analyst",
     initials: "BS",
     photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Biswajit-Sahoo.webp",
     quote:

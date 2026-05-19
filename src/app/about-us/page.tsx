@@ -77,7 +77,7 @@ const teamMembers = [
   },
   {
     name: "Biswajit Sahoo",
-    role: "Business Analytics",
+    role: "Senior Business Analyst",
     desc: "Data-driven strategist specializing in market research, performance analytics, and ROI optimization for maximum campaign effectiveness.",
     initials: "BS",
     photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Biswajit-Sahoo2.webp",
@@ -110,7 +110,7 @@ const teamMembers = [
   },
    {
     name: "Jyatirmoy Dey ",
-    role: "Business Analytics",
+    role: "Business Analyst",
     desc: "Data-driven strategist specializing in market research, performance analytics, and ROI optimization for maximum campaign effectiveness.",
     initials: "JD",
     photo: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Jyatirmoy-Dey.webp",

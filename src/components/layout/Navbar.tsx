@@ -59,6 +59,7 @@ const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Technology", href: "/technology" },
   { label: "Blog", href: "/blog" },
+   { label: "Media", href: "/media" },
 ];
 
 /* ────────────── Main Component ────────────── */
