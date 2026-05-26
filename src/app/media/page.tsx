@@ -71,61 +71,61 @@ const videos = [
         videoId: "0bZ76LAe1Ds",
     },
     {
-        title: "Smart Policing Platform",
+        title: "Sarai-2.O",
         thumbnail:
             "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review.webp",
         videoId: "Rnc32bdJBDI",
     },
     {
-        title: "Smart Policing Platform",
+        title: "Sarai-2.O",
         thumbnail:
             "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review2.webp",
         videoId: "Rfo29XDRMh0",
     },
     {
-        title: "Smart Policing Platform",
+        title: "Sarai-2.O",
         thumbnail:
             "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review-4.webp",
         videoId: "wYnztAu1SlA",
     },
     {
-        title: "Smart Policing Platform",
+        title: "Sarai-2.O",
         thumbnail:
             "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review3.webp",
         videoId: "apqaUFm2t-w",
     },
     {
-        title: "Smart Policing Platform",
+        title: "Sarai-2.O",
         thumbnail:
             "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review2.webp",
         videoId: "bJglzuaRDo",
     },
     {
-        title: "Smart Policing Platform",
+        title: "Sarai-2.O",
         thumbnail:
             "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review-4.webp",
         videoId: "ugkS_-zlcX8",
     },
     {
-        title: "Smart Policing Platform",
+        title: "Sarai-2.O",
         thumbnail:
             "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review2.webp",
         videoId: "LiW1QAyPnJY",
     },
     {
-        title: "Smart Policing Platform",
+        title: "Sarai-2.O",
         thumbnail:
             "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review3.webp",
         videoId: "u6YqFlea5jk",
     },
     {
-        title: "Smart Policing Platform",
+        title: "Sarai-2.O",
         thumbnail:
             "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review-4.webp",
         videoId: "H56kGke55PE",
     },
     {
-        title: "Smart Policing Platform",
+        title: "Sarai-2.O",
         thumbnail:
             "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review2.webp",
         videoId: "HjyZJbxMs90",
