@@ -27,10 +27,6 @@ const blogs = [
     date: "October 26, 2025",
     category: "Marketing",
   },
-
-  
-
-  // NEW BLOG ADDED
   {
     slug: "/smart-police-monitoring-system",
     title: "Khordha Police Mitra — Smart Citizen Assistance Platform",
@@ -38,6 +34,14 @@ const blogs = [
       "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/odisha-police.webp",
     date: "May 15, 2026",
     category: "Government Tech",
+  },
+  {
+    slug: "/sarai-2-review",
+    title: "Sarai 2.0 Review — Smart Hotel Intelligence & Police Monitoring",
+    image:
+      "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review2.webp",
+    date: "May 19, 2026",
+    category: "Police Tech",
   },
 ];
 
