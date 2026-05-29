@@ -36,10 +36,18 @@ const blogs = [
     category: "Government Tech",
   },
   {
-    slug: "/sarai-2-review",
-    title: "Sarai 2.0 Review — Smart Hotel Intelligence & Police Monitoring",
+    slug: "/we-care-sathi",
+    title: "We Care Sathi — Smart Women Safety & Emergency Support Platform",
     image:
       "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review2.webp",
+    date: "May 19, 2026",
+    category: "Police Tech",
+  },
+  {
+    slug: "/sarai2.O",
+    title: "Sarai 2.0 Review — Smart Hotel Intelligence & Police Monitoring",
+    image:
+      "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/Sarai2.O.webp",
     date: "May 19, 2026",
     category: "Police Tech",
   },

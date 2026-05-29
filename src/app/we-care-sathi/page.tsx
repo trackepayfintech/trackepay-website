@@ -5,16 +5,16 @@ import { CalendarDays, User, ArrowLeft, ChevronRight } from "lucide-react";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Sarai 2.0 Review — Smart Hotel Intelligence & Police Monitoring",
+  title: "We Care Sathi for Women Safety — Smart Women Safety Platform & Emergency Response",
   description:
-    "Sarai 2.0 is a smart hotel guest monitoring and police intelligence platform designed to improve public safety and law enforcement coordination.",
-  path: "/sarai-2-review",
+    "We Care Sathi for Women Safety is a comprehensive women safety platform designed to provide emergency response, real-time tracking, and law enforcement coordination for women's security.",
+  path: "/we-care-sathi-for-women-safety-review",
   keywords: [
-    "Sarai 2.0",
-    "Hotel Intelligence Platform",
-    "Police Monitoring System",
-    "Odisha Police Technology",
-    "Government Tech Solutions",
+    "We Care Sathi for Women Safety",
+    "Women Safety Platform",
+    "Emergency Response System",
+    "Women Security",
+    "Safety Tracking App",
     "Trackepay Projects",
   ],
 });
@@ -47,7 +47,7 @@ export default function BlogPostPage() {
               <ChevronRight className="w-3.5 h-3.5" />
 
               <span className="text-slate-800 font-medium truncate">
-                Sarai 2.0
+                We Care Sathi for Women Safety
               </span>
             </nav>
 
@@ -62,7 +62,7 @@ export default function BlogPostPage() {
 
             {/* Title */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 leading-tight mb-6 tracking-tight">
-              Sarai 2.0 Review — Smart Hotel Intelligence & Police Monitoring
+              We Care Sathi for Women Safety — Smart Women Safety Platform & Emergency Response
             </h1>
 
             {/* Meta */}
@@ -83,8 +83,8 @@ export default function BlogPostPage() {
             {/* Featured Image */}
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-12 shadow-lg">
               <Image
-                src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review.webp"
-                alt="Sarai 2.0"
+                src="https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/sarai-2.O-review2.webp"
+                alt="We Care for Women Safety Platform"
                 fill
                 className="object-cover"
                 priority
@@ -95,94 +95,91 @@ export default function BlogPostPage() {
             <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 sm:p-12">
               <div className="prose prose-lg max-w-none text-slate-600 leading-relaxed">
                 <p>
-                  Sarai 2.0 is an advanced hotel intelligence and police
-                  monitoring platform designed to improve public safety,
-                  strengthen digital surveillance systems, and enhance
-                  coordination between hotels and law enforcement agencies.
+                  We Care Sathi for Women Safety is a comprehensive women safety platform 
+                  designed to provide emergency response, real-time tracking, and 
+                  law enforcement coordination for women's security. The platform 
+                  empowers women with instant access to help during distress situations.
                 </p>
 
                 <p>
-                  Developed as a smart governance solution, the platform helps
-                  authorities monitor hotel guest activities in real time while
-                  enabling hotels to manage digital guest registration and
-                  compliance through a centralized system.
+                  Developed as a smart safety solution, the platform helps women 
+                  connect with emergency services, share their location with trusted 
+                  contacts, and alert authorities instantly when facing any security 
+                  threat or unsafe situation.
                 </p>
 
                 <h2 className="text-2xl font-bold text-slate-800 mt-10 mb-4">
-                  Real-Time Hotel Monitoring System
+                  Real-Time Emergency Response System
                 </h2>
 
                 <p>
-                  Sarai 2.0 allows hotels to digitally register guest details
-                  and instantly share important information with police
-                  departments through secure cloud-based infrastructure. The
-                  system minimizes manual paperwork and enables faster access
-                  to guest records whenever required.
+                  We Care Sathi for Women Safety features an intelligent emergency alert 
+                  system that allows users to send distress signals with just one tap. 
+                  The system instantly notifies police, emergency contacts, and 
+                  nearby safety volunteers with the user's exact location.
                 </p>
 
                 <p>
-                  Authorities can monitor hotel activities, identify suspicious
-                  entries, and receive real-time alerts through a centralized
-                  dashboard designed for operational efficiency and quick
-                  response handling.
+                  The platform includes real-time location tracking, audio and video 
+                  recording capabilities, and automatic evidence collection to ensure 
+                  swift action and legal support when needed.
                 </p>
 
                 <ul className="list-disc pl-6 space-y-2 mt-4">
                   <li>
-                    Smart hotel guest registration platform
+                    One-tap SOS emergency alert system
                   </li>
 
                   <li>
-                    Real-time monitoring and alerts
+                    Real-time location tracking and sharing
                   </li>
 
                   <li>
-                    Centralized dashboard for police departments
+                    Automatic police and contact notification
                   </li>
 
                   <li>
-                    Automated suspect and watchlist detection
+                    Audio and video evidence recording
                   </li>
 
                   <li>
-                    Digital reporting and analytics system
+                    Safe route and public transport monitoring
                   </li>
                 </ul>
 
                 <h2 className="text-2xl font-bold text-slate-800 mt-10 mb-4">
-                  Intelligent Analytics & Reporting
+                  Intelligent Analytics & Safety Insights
                 </h2>
 
                 <p>
-                  The platform includes modern analytics and reporting tools
-                  that help authorities monitor trends, hotel occupancy, and
-                  guest activity statistics efficiently. The data-driven system
-                  improves operational visibility and supports faster
-                  decision-making for law enforcement teams.
+                  The platform includes modern analytics tools that help authorities 
+                  identify high-risk areas, monitor safety trends, and improve police 
+                  patrolling strategies. The data-driven system enhances response times 
+                  and supports proactive safety measures for communities.
                 </p>
 
                 <p>
-                  With advanced digital workflows and automation, Sarai 2.0
-                  helps improve coordination between hotels and police
-                  authorities while ensuring better transparency and compliance.
+                  With advanced digital workflows and real-time communication, We Care 
+                  for Women Safety helps bridge the gap between citizens and law enforcement 
+                  while ensuring faster emergency response and better protection for women.
                 </p>
 
                 <h2 className="text-2xl font-bold text-slate-800 mt-10 mb-4">
-                  Strengthening Smart Governance
+                  Strengthening Women Safety in Communities
                 </h2>
 
                 <p>
-                  Sarai 2.0 represents a major step toward smart governance and
-                  digital policing infrastructure in Odisha. By integrating
-                  technology with law enforcement operations, the platform
-                  improves urban security and creates a more connected public
-                  safety ecosystem.
+                  We Care Sathi for Women Safety represents a major step toward creating safer 
+                  public spaces and empowering women with technology-driven security 
+                  solutions. By integrating mobile technology with law enforcement 
+                  operations, the platform improves urban safety and creates a more 
+                  connected security ecosystem.
                 </p>
 
                 <p>
-                  The solution demonstrates how modern digital platforms can
-                  transform traditional monitoring systems into intelligent,
-                  scalable, and citizen-focused public safety solutions.
+                  The solution demonstrates how modern digital platforms can transform 
+                  personal safety into an intelligent, accessible, and citizen-focused 
+                  security system that works 24/7 to protect women in need.
                 </p>
               </div>
             </div>
