@@ -281,3 +281,36 @@ iframe {
 iframe::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+
+
+
+
+/* In your globals.css */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 4s ease infinite;
+  background-size: 200% 200%;
+}
+
+/* Optional: Add a subtle tech scanline effect */
+.tech-scanline {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(244, 129, 32, 0.03) 2px,
+    rgba(244, 129, 32, 0.03) 4px
+  );
+}

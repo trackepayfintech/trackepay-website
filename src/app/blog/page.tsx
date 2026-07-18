@@ -51,6 +51,13 @@ const blogs = [
     date: "May 19, 2026",
     category: "Police Tech",
   },
+  {
+    slug: "/trackepay-empanelled-with-ocac-odisha",
+    title: "TrackePay Achieves OCAC Empanelment: A New Chapter in Driving Digital Transformation Across Odisha",
+    image: "https://pub-29088a4621cd4b7ab23bef1697349075.r2.dev/web-assets/OCAC-Empanelled.webp",
+    date: "July 18, 2026",
+    category: "Milestone",
+  },
 ];
 
 export default function BlogPage() {
@@ -84,12 +91,16 @@ export default function BlogPage() {
                 className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Image */}
-                <div className="relative w-full aspect-[16/10] overflow-hidden">
+                <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-50">
                   <Image
                     src={blog.image}
                     alt={blog.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`${
+                      blog.slug === "/trackepay-empanelled-with-ocac-odisha"
+                        ? "object-contain bg-white p-2"
+                        : "object-cover group-hover:scale-105"
+                    } transition-transform duration-500`}
                   />
                 </div>
 

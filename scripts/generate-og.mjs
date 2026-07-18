@@ -57,6 +57,11 @@ const PAGES = [
     eyebrow: "Insight",
     title: "Top Strategies for Online Advertising in Bhubaneswar",
   },
+  {
+    file: "trackepay-empanelled-with-ocac-odisha",
+    eyebrow: "Milestone",
+    title: "TrackePay Achieves OCAC Empanelment",
+  },
 ];
 
 function template({ title, eyebrow, logoSrc }) {
