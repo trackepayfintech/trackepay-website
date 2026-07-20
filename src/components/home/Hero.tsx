@@ -159,23 +159,23 @@ const TechStats = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 max-w-3xl mx-auto">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 mt-6 max-w-3xl mx-auto px-4 sm:px-0">
       {stats.map((stat, i) => (
         <motion.div
           key={i}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 + i * 0.1 }}
-          className="bg-white/[0.03] border border-white/10 rounded-lg p-4 backdrop-blur-sm hover:border-[#F48120]/30 transition-all duration-300 group"
+          className="bg-white/[0.03] border border-white/10 rounded-lg p-2.5 sm:p-4 backdrop-blur-sm hover:border-[#F48120]/30 transition-all duration-300 group"
         >
-          <div className="flex items-center justify-center gap-2">
-            <stat.icon className="h-4 w-4 text-[#F48120] opacity-60 group-hover:opacity-100 transition-opacity" />
-            <div className="text-2xl font-bold text-[#F48120]">
+          <div className="flex items-center justify-center gap-1.5 sm:gap-2">
+            <stat.icon className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#F48120] opacity-60 group-hover:opacity-100 transition-opacity" />
+            <div className="text-base sm:text-2xl font-bold text-[#F48120]">
               {stat.value}
-              <span className="text-sm">{stat.suffix}</span>
+              <span className="text-xs sm:text-sm">{stat.suffix}</span>
             </div>
           </div>
-          <div className="text-xs text-white/40 mt-1 text-center">{stat.label}</div>
+          <div className="text-[10px] sm:text-xs text-white/40 mt-1 text-center">{stat.label}</div>
         </motion.div>
       ))}
     </div>
@@ -346,7 +346,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center bg-[#0a0a0a] overflow-hidden ">
+    <section className="relative min-h-[90vh] flex items-center justify-center bg-[#0a0a0a] overflow-hidden">
       {/* Background Layers */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#0d0d0d] to-[#1a0a0a]" />
       <BinaryBackground />
@@ -408,7 +408,7 @@ export default function Hero() {
         {/* Subtitle */}
         <motion.p
           variants={fadeUp}
-          className="mt-6 text-white/50 text-lg max-w-2xl mx-auto leading-relaxed"
+          className="mt-6 text-white/50 text-xs sm:text-sm md:text-lg max-w-2xl mx-auto leading-relaxed px-4 sm:px-0"
         >
           Enterprise-grade solutions built with cutting-edge technology.
           From AI-powered systems to robust cloud infrastructure,we deliver innovation at scale.
@@ -425,25 +425,25 @@ export default function Hero() {
         {/* CTA Buttons */}
         <motion.div
           variants={fadeUp}
-          className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="mt-8 flex flex-row gap-3 justify-center items-center px-4 sm:px-0"
         >
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex-1 sm:flex-initial">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center w-full sm:w-auto gap-2 bg-gradient-to-r from-[#F48120] to-orange-500 text-white px-7 py-3.5 rounded-lg font-semibold text-[15px] transition-all duration-200 shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40"
+              className="inline-flex items-center justify-center w-full gap-1.5 sm:gap-2 bg-gradient-to-r from-[#F48120] to-orange-500 text-white px-3 sm:px-7 py-2.5 sm:py-3.5 rounded-lg font-semibold text-xs sm:text-[15px] transition-all duration-200 shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40"
             >
-              <Server className="h-4 w-4" />
+              <Server className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
               Start Building
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             </Link>
           </motion.div>
 
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex-1 sm:flex-initial">
             <Link
               href="/portfolio"
-              className="inline-flex items-center justify-center w-full sm:w-auto gap-2 bg-white/10 backdrop-blur-sm text-white border border-white/20 px-7 py-3.5 rounded-lg font-semibold text-[15px] transition-all duration-200 hover:bg-white/20 shadow-lg shadow-black/10"
+              className="inline-flex items-center justify-center w-full gap-1.5 sm:gap-2 bg-white/10 backdrop-blur-sm text-white border border-white/20 px-3 sm:px-7 py-2.5 sm:py-3.5 rounded-lg font-semibold text-xs sm:text-[15px] transition-all duration-200 hover:bg-white/20 shadow-lg shadow-black/10"
             >
-              <Shield className="h-4 w-4" />
+              <Shield className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
               View Our Work
             </Link>
           </motion.div>
@@ -452,24 +452,24 @@ export default function Hero() {
         {/* Trust Indicators */}
         <motion.div
           variants={fadeUp}
-          className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[13px] text-white/25"
+          className="mt-8 flex flex-nowrap items-center justify-center gap-x-3.5 sm:gap-x-6 text-xs sm:text-[13px] text-white/25 whitespace-nowrap"
         >
-          <span className="flex items-center gap-2">
+          <span className="flex items-center gap-1 sm:gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-green-400/50"></span>
             99.9% Uptime
           </span>
           <span className="hidden sm:inline text-white/10">|</span>
-          <span className="flex items-center gap-2">
+          <span className="hidden sm:flex items-center gap-1 sm:gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400/50"></span>
             SOC2 Compliant
           </span>
           <span className="hidden sm:inline text-white/10">|</span>
-          <span className="flex items-center gap-2">
+          <span className="flex items-center gap-1 sm:gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-purple-400/50"></span>
             24/7 Support
           </span>
           <span className="hidden sm:inline text-white/10">|</span>
-          <span className="flex items-center gap-2">
+          <span className="flex items-center gap-1 sm:gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-orange-400/50"></span>
             Enterprise Ready
           </span>
